@@ -5,7 +5,7 @@ title: About
 ![profile](/assets/RowanCallahanHeadshot2.jpg){:class="img-responsive"}
 
 ### Hi! 
-I am an undergraduate researcher in the [Brito lab](https://www.britolab.org/people) at Cornell University.
+I am a laboratory techncian in the [Brito lab](https://www.britolab.org/people) at Cornell University.
 
 I am interested in using and developing computational tools that provide positive benefit through scientific usefulness, privacy, and open source reusability.
 
@@ -20,7 +20,6 @@ for those who are interested in corresponding with encryption my key should be o
 ```
 {{site.public_key}}
 
-rsa 2048 bit
 ```
 
 My email is {{site.email}}
@@ -35,8 +34,6 @@ You can find some of my work on [Github](https://github.com/rowancallahan)
 ### Projects I am currently working on
 
 Research of bacterial antibiotic resistance with genetic assembly data
-
-Digital Wardrobe app for clothing sharing
 
 also keeping a close eye on quite a few distributed computing projects
 
