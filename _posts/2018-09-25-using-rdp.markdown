@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "Using RDPTools to assign taxonomy to 16s sequences"
+date:   2018-09-25 02:08:46 -0400
+categories: jekyll update
+---
+
+**Using RDPTools to assign taxonomy**
+
+
+RDPTools comes across as a pretty useful way to assign taxonomy if you are having some trouble with the greengenes database.
+
+I was having some trouble working with the database because I was unable to find mappings that were unique for the 16s sequences I had.
+
+It looked like there might be multiple different 100 percent matches to the greengenes database. 
+
+After confirming that sometimes these matches were for different bacteria.
+I was starting to doubt whether I was using the database effectively or even correctly so I decided to check with another database tool.
+Hopefully this would tell me whether there was a problem with my sequences or I needed to change the way that I was using greengenes.
+I considered that possibly I should make a database of my 16s and see what greengenes sequences matched.
+
+RDP has most of their information available on their github at: This location[https://github.com/rdpstaff/classifier]
+
+Once you have finished installing and combined the 16s rRna that you need to look at into one large fasta file all that you need to run is
+
+java -Xmx1g -jar /path/to/classifier.jar 
+
+to get the help options
+
+to classify your samples and output a csv file you run
+
+java -Xmx1g -jar /path/to/classifier/jar -o /path/to/output.txt /path/to/fastaInputFile.fasta
+
+This will take in your fastaInputFile.fasta and spit out an output.txt file in the location yous pecify.
+
