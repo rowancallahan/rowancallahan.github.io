@@ -35,6 +35,5 @@ You can find some of my work on [Github](https://github.com/rowancallahan)
 
 Research of bacterial antibiotic resistance with genetic assembly data
 
-also keeping a close eye on quite a few distributed computing projects
 
 
