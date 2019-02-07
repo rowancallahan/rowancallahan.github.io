@@ -39,8 +39,8 @@ In order to make a quickstart a little easier and a little less painless I have 
 
 This is the output of running
 ```
-git clone https://github.com/rowancallahan/unofficial_blastn_man
-cd unofficial_blastn_man
+git clone https://github.com/rowancallahan/short_bioinformatics_scripts
+cd short_bioinformatics_scripts
 man ./blast_unoficcial_man.1
 ```
 
@@ -172,5 +172,5 @@ User Manuals                                    Rowan                           
 
 ```
 
-[manfile]: https://github.com/rowancallahan/unofficial_blastn_man
+[manfile]: https://github.com/rowancallahan/short_bioinformatics_scripts
 
