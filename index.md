@@ -9,7 +9,6 @@ I am a laboratory techncian in the [Brito lab](https://www.britolab.org/people) 
 
 I am interested in using and developing computational tools that provide positive benefit through scientific usefulness, privacy, and open source reusability.
 
-I frequently have no idea what i'm doing!  
 
 
 ### Contact Information  
@@ -33,6 +32,6 @@ You can find some of my work on [Github](https://github.com/rowancallahan)
 
 ### Projects I am currently working on
 
-Research of bacterial antibiotic resistance with genetic assembly data
+Research of bacterial antibiotic resistance with genetic assembly data and metagenomes
 
 
