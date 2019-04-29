@@ -1,37 +1,7 @@
 ---
-layout: page
-title: About
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: home
+title: Posts 
 ---
-![profile](/assets/RowanCallahanHeadshot2.jpg){:class="img-responsive"}
-
-### Hi! 
-I am a laboratory techncian in the [Brito lab](https://www.britolab.org/people) at Cornell University.
-
-I am interested in using and developing computational tools that provide positive benefit through scientific usefulness, privacy, and open source reusability.
-
-
-
-### Contact Information  
-
-My email is {{site.email}}
-
-for those who are interested in corresponding with encryption my key should be on the mit PGP keyserver
-```
-{{site.public_key}}
-
-```
-
-My email is {{site.email}}
-
-You can find my resume [here]({{ site.baseurl }}/pdfs/Rowan.Callahan.pdf)
-
-very occasionally I put  writing on [medium](https://medium.com/@rowancallahan)
-
-You can find some of my work on [Github](https://github.com/rowancallahan)
-
-
-### Projects I am currently working on
-
-Research of bacterial antibiotic resistance with genetic assembly data and metagenomes
-
-
