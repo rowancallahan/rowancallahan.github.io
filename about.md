@@ -4,7 +4,7 @@ title: About
 ---
 ![profile](/assets/RowanCallahanHeadshot2.jpg){:class="img-responsive"}
 
-### About Me 
+### Who I am 
 I am a laboratory techncian in the [Brito lab](https://www.britolab.org/people) at Cornell University.
 
 I am interested in using and developing computational tools that provide positive benefit through scientific usefulness, privacy, and open source reusability.

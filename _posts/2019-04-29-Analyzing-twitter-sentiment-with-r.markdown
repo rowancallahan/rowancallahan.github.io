@@ -24,6 +24,9 @@ For a list of positive and negative sentiment words, I used the list created by 
 **Finished product**
 You can find the finished project as an R shiny app [here][app].
 
+![appexample](/assets/rshiny_app_pic.png){:class="img-responsive"}
+
+
 There were a few things that I was surprised by while making this app:
 
 
