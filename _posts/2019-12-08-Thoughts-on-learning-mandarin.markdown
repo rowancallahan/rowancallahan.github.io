@@ -61,11 +61,20 @@ It is also true that a majority of the characters are the same or look very simi
 
 **Nitty gritty studying Strategies**
 **Anki
+I personally find that using the card spaced repetition software anki to be one of the most efficient and speedy ways to memorize mandarin voabulary. Not only does the software keep track of words that you are about to forget but it also takes a huge mental load off of what you need to review. Allowing yourself just 30 precisely targeted minutes is enough to touch base on everything, and for me personally even move forward.
+
 **Maximizing anki speed
+There is a certain maximum that everyone has when it comes to words that are in their "sort of know" bucket. The problem is that at first this is the only bucket that you are filling. For me personally this "sorf of know" bucket is around 800 words. This means that this is the maximum number of words that I can have to be reviewed within a single month. After I add more words it becomes harder and harder to remember other parts of the "sort of know" bucket and I begin to forget everything that hasn't been learned really well. For me this means slowing down to about 20 words per day, as once I get to around 800 words I am filing about 20 cards away for long term reminders in anki, so I can add about 20 cards a day for new usage. This does mean that you need to make sure not to over study once you reach the saturation point.
+
 **Finding a good Anki deck
+There are plenty of good decks out there, but if you can find a deck that has an audio clip and uses the word in a sentence I find that this will often enhance your learning of the words. There is one website in particular that has lists of various sentences at different levels of difficulty.
+
 **Learning radicals
+If you want to learn the characters it is also imperative that you learn the radicals. For a number of reasons this will decrease the mental load that it takes to remember and recall the characters when you use them in daily life. Without the radicals your brain will often have to do to much work and it will be trying to memorize every single line. This is absoutely no good as you should be able to break down every character into just a few radicals for easier memorization. Memorizing all of the radicals is also not that bad because therea are only about 180, and many of these radicals are also characters in and of themselves. So merely by paying attention to a few of the characters you are learning it will become much easier to learn all the other characters as a whole.
+
 **How much writing to learn
-**Learning individual characters
+Unfortunately writing will help you recognize characters and is more useful than I originally thought. This is unfortunate because writing by far takes some of the most time and gives you the least amount of benefit in your everyday life. However if you are interested in reading some difficult signs as well as in reading others handwriting, writing will help you in these contexts. If you are interested in learning to write I would take the time to memorize the top 80 radicals first and learn how to write those. After the radicals I would focus on learning no more than around the 500 most common characters. Going further to maybe 1500. Some huge percentage of everything that you will read can be read with only 1500 characters, but if you learn the 80 to 100 most common radicals you should have no problem whatsoever breaking down almost any character.
+
 
 **What the hell is Anki??**
 Anki is a [flashcard][anki_website] progam
