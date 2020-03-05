@@ -5,20 +5,18 @@ title: About
 ![profile](/assets/RowanCallahanHeadshot2.jpg){:class="img-responsive"}
 
 ### Who I am 
-I am a laboratory techncian in the [Brito lab](https://www.britolab.org/people) at Cornell University.
+I am a Research Assistant in the [Maxson Lab](https://www.maxsonlab.org/team.html) at OHSU.
 
-I am interested in using and developing computational tools that provide positive benefit through scientific usefulness, privacy, and open source reusability.
+I am interested in using and developing computational tools that allow scientists to better understand their genomic data.
 
 You can find my resume [here]({{ site.baseurl }}/pdfs/Rowan.Callahan.pdf)
-
-very occasionally I put  writing on [medium](https://medium.com/@rowancallahan)
 
 You can find some of my work on [Github](https://github.com/rowancallahan)
 
 
 ### Projects I am currently working on
 
-Research of bacterial antibiotic resistance with genetic assembly data and metagenomes
+Creating pipelines for the analysis of drug synergy for Cancer treatment
 
 
 ### Contact Information  
