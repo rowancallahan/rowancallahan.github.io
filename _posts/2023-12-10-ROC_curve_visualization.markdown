@@ -13,4 +13,4 @@ please go [here][app_location] if it doesn't load!
 <iframe src="https://rowancallahan.github.io/assets/static_plotly_gaussian_sliders.html" width="80%" height="90%"></iframe>
 
 
-[app_location]:[https://rowancallahan.github.io/assets/static_plotly_gaussian_sliders.html]
+[app_location]:https://rowancallahan.github.io/assets/static_plotly_gaussian_sliders.html
