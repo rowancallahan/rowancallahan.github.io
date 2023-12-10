@@ -7,4 +7,4 @@ categories: jekyll update
  ## Standalone Webapp Below
 Below is the first pass of making an ROC curve visualizer for explaining how and what ROC curves are!
 
-<iframe src="{{ '/assets/my-web-app.html' | relative_url }}" width="100%" height="600px"></iframe>
+<iframe src="https://rowancallahan.github.io/assets/static_plotly_gaussian_sliders.html" width="80%" height="90%"></iframe>
