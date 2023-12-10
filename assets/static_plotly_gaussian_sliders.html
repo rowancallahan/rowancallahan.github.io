@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gaussian Distribution with Sliders</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center; /* center horizontally */
+        }
+        #plot-container {
+            flex: 2;
+            flex-direction: column;
+        }
+        #slider-container {
+            flex: 2;
+            flex-direction: column;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-left: 10px;
+            max-width: 350px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div id="plot-container">
+        <div id="plot"></div>
+        <div id="roc-plot"></div>
+    </div>
+
+
+    <div id="slider-container">
+        <!-- Sliders here -->
+        Distribution Control Box:
+
+        <br/>
+        <div class="slider">
+
+            <label for="healthy-mean-slider">Mean (Healthy Patients):</label>
+            <br/>
+            <input type="range" id="healthy-mean-slider" min="-5" max="5" step="0.1" value="0">
+            <br/>
+            <label for="healthy-std-slider">Standard Deviation (Healthy Patients):</label>
+            <br/>
+            <input type="range" id="healthy-std-slider" min="0.1" max="5" step="0.1" value="1">
+            <br/>
+            <label for="cancer-mean-slider">Mean (Cancer Patients):</label>
+            <br/>
+            <input type="range" id="cancer-mean-slider" min="-5" max="5" step="0.1" value="2">
+            <br/>
+            <label for="cancer-std-slider">Standard Deviation (Cancer Patients):</label>
+            <br/>
+            <input type="range" id="cancer-std-slider" min="0.1" max="5" step="0.1" value="1.5">
+            <br/>
+            <label for="ratio-slider">Healthy Cancer Ratio:</label>
+            <br/>
+            <input type="range" id="ratio-slider" min="0.5" max="100" step="0.1" value="1">
+            <br/>
+            <label for="boundary-slider">Decision Boundary:</label>
+            <br/>
+            <input type="range" id="boundary-slider" min="-10" max="10" step="0.1" value="0">
+            <br/>
+            <div id="output-text"></div>
+
+        </div>
+        <!-- ... additional sliders ... -->
+    </div>
+</div>
+
+
+<script>
+    function gaussian(x, mean, std) {
+        return (1 / (std * Math.sqrt(2 * Math.PI))) * Math.exp(-0.5 * Math.pow((x - mean) / std, 2));
+    }
+
+    function gaussianCDF(x, mean, std) {
+        return 0.5 * (1 + math.erf((x - mean) / (Math.sqrt(2) * std)));
+    }
+
+    function plot(healthyMean, healthyStd, cancerMean, cancerStd, decisionBoundary, ratio) {
+        var x = [];
+        var healthyY = [];
+        var cancerY = [];
+        for (var i = -10; i < 10; i += 0.1) {
+            x.push(i);
+            healthyY.push( (ratio/(ratio+1.0)) * gaussian(i, healthyMean, healthyStd));
+            cancerY.push(  (1.0/(ratio+1.0))* gaussian(i, cancerMean, cancerStd));
+        }
+
+        var data = [
+            {x: x, y: healthyY, type: 'scatter', name: 'Healthy Patients'},
+            {x: x, y: cancerY, type: 'scatter', name: 'Cancer Patients'},
+            {x: [decisionBoundary, decisionBoundary], y: [0, Math.max(...healthyY, ...cancerY)], mode: 'lines', line: {color: 'red'}, name: 'Decision Boundary'},
+        ];
+        
+        var layout = {
+            title: 'Healthy vs Cancer',
+            showlegend: false // This line removes the legend,
+        };
+
+        var sensitivity= [];
+        var oneminus_specificity = [];
+        for (var i = -10; i < 10; i += 0.1) {
+            var true_positive = (1-gaussianCDF(i, cancerMean, cancerStd)) ;
+            var false_positive = (1-gaussianCDF(i, healthyMean, healthyStd)) ;
+            var false_negative= (gaussianCDF(i, cancerMean, cancerStd)) ;
+            var true_negative=  (gaussianCDF(i, healthyMean, healthyStd)) ;
+
+            var sensitivity_point = true_positive/(true_positive+false_negative);
+            var specificity_point = true_negative/(true_negative+false_positive);
+
+            sensitivity.push(sensitivity_point);
+            oneminus_specificity.push(1.0-specificity_point);
+        }
+
+       var true_positive_bound = (1-gaussianCDF(decisionBoundary, cancerMean, cancerStd)) ;
+       var false_positive_bound = (1-gaussianCDF(decisionBoundary, healthyMean, healthyStd)) ;
+       var false_negative_bound = (gaussianCDF(decisionBoundary, cancerMean, cancerStd)) ;
+       var true_negative_bound =  (gaussianCDF(decisionBoundary, healthyMean, healthyStd)) ;
+
+       var sensitivity_point = true_positive_bound/(true_positive_bound+false_negative_bound);
+       var specificity_point = true_negative_bound/(true_negative_bound+false_positive_bound);
+
+       var rocData = [
+            {x: oneminus_specificity, y: sensitivity, type: 'scatter', name: 'ROC curve'},
+            {x: oneminus_specificity, y: oneminus_specificity, mode:'lines',type:'scatter',
+                line:{'dash': 'dash', 'color': 'gray', width: 4}},
+            {x: [1.0-specificity_point], y: [sensitivity_point], mode: 'markers',type: 'scatter',
+                marker: {color: 'red', size: 10}},
+        ];
+        var rocLayout = {
+            title: 'Receiver Operator Characteristic Curve',
+            showlegend: false,
+            xaxis: {title: '1- Specificity'},
+            yaxis: {title: 'Sensitivity'},
+        };
+
+        Plotly.newPlot('roc-plot', rocData, rocLayout);
+        Plotly.newPlot('plot', data, layout);
+
+    }
+
+
+    function updateOutputText() {
+        var ratio = document.getElementById("ratio-slider").value;
+        var boundary = document.getElementById("boundary-slider").value;
+        var health_mean = document.getElementById("healthy-mean-slider").value;
+        var health_std = document.getElementById("healthy-std-slider").value;
+        var cancer_mean = document.getElementById("cancer-mean-slider").value;
+        var cancer_std = document.getElementById("cancer-std-slider").value;
+        var healthy_frac = ratio/(1.0+ratio)
+        var cancer_frac = 1.0/(1.0+ratio)
+
+        var true_positive = (1-gaussianCDF(boundary, cancer_mean, cancer_std)) ;
+        var false_positive = (1-gaussianCDF(boundary, health_mean, health_std)) ;
+        var false_negative= (gaussianCDF(boundary, cancer_mean, cancer_std)) ;
+        var true_negative=  (gaussianCDF(boundary, health_mean, health_std)) ;
+
+
+        document.getElementById("output-text").innerHTML = 
+            "Sensitivity: " + true_positive/(true_positive+false_negative) +
+             "<br>Specificity: " + true_negative/(true_negative+false_positive) +
+            "<br>Positive Predictive Value: " + (true_positive)/ ((false_positive*ratio)+ true_positive);
+    }
+
+
+
+    function updatePlot() {
+        plot(
+            document.getElementById("healthy-mean-slider").value,
+            document.getElementById("healthy-std-slider").value,
+            document.getElementById("cancer-mean-slider").value,
+            document.getElementById("cancer-std-slider").value,
+            document.getElementById("boundary-slider").value,
+            document.getElementById("ratio-slider").value
+
+        );
+        updateOutputText();
+    }
+
+    document.getElementById("healthy-mean-slider").addEventListener("input", updatePlot);
+    document.getElementById("healthy-std-slider").addEventListener("input", updatePlot);
+    document.getElementById("cancer-mean-slider").addEventListener("input", updatePlot);
+    document.getElementById("cancer-std-slider").addEventListener("input", updatePlot);
+    document.getElementById("ratio-slider").addEventListener("input", updatePlot);
+    document.getElementById("boundary-slider").addEventListener("input", updatePlot);
+
+    updatePlot(); // Initial plot
+</script>
+
+</body>
+</html>
+
