@@ -139,8 +139,8 @@
             yaxis: {title: 'Sensitivity'},
         };
 
-        Plotly.newPlot('roc-plot', rocData, rocLayout);
-        Plotly.newPlot('plot', data, layout);
+        Plotly.newPlot('roc-plot', rocData, rocLayout, {displayModeBar: false});
+        Plotly.newPlot('plot', data, layout, {displayModeBar: false});
 
     }
 
