@@ -4,8 +4,8 @@ title:  "Presenting WoofGPT"
 date:   2023-12-26 18:29:00 -0400
 categories: jekyll update
 ---
- ##WoofGPT a breakthrough in animal language models
-----
+ 
+##WoofGPT a breakthrough in animal language models
 
 Recent breakthroughs in Artificial Intelligence and Large language models have promised to reshape how we work, live and think.
 Despite large breakthroughs in human like intelligence animal, and in particular dog-like intelligence has proven difficult to pin down and capture.
@@ -26,10 +26,12 @@ If you don't own a dog How many times have you wanted to own a dog just to fret 
 We will be releasing the training data and weights of WoofGPT publicly.
 Notably we also are releasing a hosted version of the model for the public to play with below to try and experience this new intelligence for themselves.
 
-Please go [here][app_location] if the model is unable to load.!
+Please go [here][app_location] if the model is unable to load!
 
 
 <iframe src="https://rowancallahan.github.io/assets/woof_new.html" width="100%"></iframe>
 
 (this is supposed to be a haha joke)
+
+
 [app_location]:https://rowancallahan.github.io/assets/woof_new.html
