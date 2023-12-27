@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Vue.js Chat App</title>
+    <style>
+        #chat-container {
+            width: 300px;
+            height: 600px;
+            border: 1px solid black;
+            padding: 10px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column; /* To keep the input at the bottom */
+            justify-content: flex-end;
+        }
+
+        .message-container {
+            max-width: 70%;
+            word-wrap: break-word;
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            background-color: lightblue;
+            border-radius: 10px;
+            padding: 5px;
+            align-self: flex-end; /* Right justify for user messages */
+        }
+
+        .bot-message {
+            background-color: lightgreen;
+            border-radius: 10px;
+            padding: 5px;
+            align-self: flex-start; /* Left justify for bot messages */
+        }
+
+        .input-container {
+            display: flex;
+            width: 100%;
+        }
+
+        input, button {
+            margin: 5px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="app">
+        <chat-box></chat-box>
+    </div>
+
+    <!-- Import Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <!-- App's Script -->
+    <script>
+        Vue.component('chat-box', {
+            data() {
+                return {
+                    newMessage: '',
+                    messages: []
+                };
+            },
+            methods: {
+                sendMessage() {
+                    if (this.newMessage.trim() === '') return;
+        
+                    this.messages.push({ text: this.newMessage, sender: 'user' });
+                    this.newMessage = '';
+        
+                    setTimeout(() => {
+                        const woofResponse = this.generateRandomWoof();
+                        this.messages.push({ text: woofResponse, sender: 'bot' });
+                        this.scrollToBottom();
+                    }, 500);
+                },
+                scrollToBottom() {
+                    const container = this.$el.querySelector("#chat-container");
+                    container.scrollTop = container.scrollHeight;
+                },
+                generateRandomWoof() {
+                    const numberOfWoofs = Math.floor(Math.random() * 10) + 1; // Random number between 1 and 10
+                    return 'woof '.repeat(numberOfWoofs).trim();
+                }
+            },
+            template: `
+                <div>
+                    <div id="chat-container">
+                        <div v-for="message in messages" :class="{'user-message': message.sender === 'user', 'bot-message': message.sender === 'bot'}" class="message-container">
+                            {{ message.text }}
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" v-model="newMessage" @keyup.enter="sendMessage" placeholder="Type a message...">
+                        <button @click="sendMessage">Send</button>
+                    </div>
+                </div>
+            `
+        });
+        
+        new Vue({
+            el: '#app'
+        });
+
+    </script>
+
+
+</body>
+</html>
+
