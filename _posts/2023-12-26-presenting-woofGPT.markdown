@@ -5,7 +5,7 @@ date:   2023-12-26 18:29:00 -0400
 categories: jekyll update
 ---
  
-##WoofGPT a breakthrough in animal language models
+## WoofGPT represents a novel breakthrough in animal language models
 
 Recent breakthroughs in Artificial Intelligence and Large language models have promised to reshape how we work, live and think.
 Despite large breakthroughs in human like intelligence animal, and in particular dog-like intelligence has proven difficult to pin down and capture.
@@ -17,9 +17,9 @@ Notabley we are able to achieve SOTA and beat single model performance using onl
 
 |                   | random_baseline | woofGPT           | single model SOTA |
 |-------------------|-----------------|-------------------|-------------------|
-| dogBENCH          | 50%             |  69%              | *71%*             |
-| woofnogrande      | 50%             | *69%*             | 65%               |
-| WOOF8k            | 0%              | *42%*             | 10%               |
+| dogBENCH          | 50%             |  69%              | **71%**           |
+| woofnogrande      | 50%             | **69%**           | 65%               |
+| WOOF8k            | 0%              | **42%**           | 10%               |
 
 We think that this model will democratize dog dog intelligence. 
 If you don't own a dog How many times have you wanted to own a dog just to fret about the fees and upkeep in order to interact with humankinds greatest friend.
@@ -29,7 +29,7 @@ Notably we also are releasing a hosted version of the model for the public to pl
 Please go [here][app_location] if the model is unable to load!
 
 
-<iframe src="https://rowancallahan.github.io/assets/woof_new.html" width="100%" height="900px"></iframe>
+<iframe src="https://rowancallahan.github.io/assets/woof_new.html" width="100%" height="800px"></iframe>
 
 (this is supposed to be a haha joke)
 
