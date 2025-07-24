@@ -16,10 +16,9 @@
 
 
 author: Rowan Callahan
-title: Mistakes.dmp 
-email: rowan.l.callahan@gmail.com
+title: reading reads
+email: rowan.callahan@hey.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This site provides up to date information on my current projects and collaborative endeavors, as well as snippets about my life.
   Please reach out if anything is interesting to you or if you would like to work together on any projects!
 
 baseurl: "" # the subpath of your site, e.g. /blog
