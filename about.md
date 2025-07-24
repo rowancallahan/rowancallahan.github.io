@@ -2,7 +2,7 @@
 layout: page
 title: About
 ---
-![profile](/assets/RowanCallahanHeadshot2.jpg){:class="img-responsive"}
+![profile](/assets/headshot_rowancallahan.jpg){:class="img-responsive"}
 
 ### Who I am 
 I am a graduate student in CEDAR at OHSU.
