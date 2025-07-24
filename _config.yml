@@ -1,4 +1,4 @@
-# Welcome to Jekyll!
+## Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
@@ -14,18 +14,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-
 author: Rowan Callahan
 title: reading reads
 email: rowan.callahan@hey.com
 description: >- # this means to ignore newlines until "baseurl:"
   Please reach out if anything is interesting to you or if you would like to work together on any projects!
-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "rowancallahan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-
 github_username: rowancallahan
-
 public_key: E479A2F3B1846BA209471C4978FD03D091BA651B
 
 # Build settings
@@ -33,6 +29,22 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+
+# Minima theme customization for Gruvbox colors
+minima:
+  skin: gruvbox-light
+
+# Custom colors (will be used in custom CSS)
+gruvbox:
+  bg0: "#fbf1c7"
+  bg1: "#ebdbb2" 
+  bg2: "#d5c4a1"
+  fg0: "#282828"
+  fg1: "#3c3836"
+  blue: "#458588"
+  green: "#98971a"
+  orange: "#d65d0e"
+  red: "#cc241d"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
