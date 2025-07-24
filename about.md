@@ -42,10 +42,4 @@ Are tumors found with imaging likely different from those found with sequencing?
 
 My email is {{site.email}}
 
-for those who are interested in corresponding with encryption my key is on the mit PGP keyserver
-```
-{{site.public_key}}
-
-```
-
 

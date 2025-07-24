@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Getting Started With BioJulia Part 1: Analyzing Bam Files? | reading reads</title>
+<meta name="generator" content="Jekyll v4.0.1" />
+<meta property="og:title" content="Getting Started With BioJulia Part 1: Analyzing Bam Files?" />
+<meta name="author" content="Rowan Callahan" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Who is this for?" />
+<meta property="og:description" content="Who is this for?" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/04/10/Using-BioJulia-to-analyze-bamfiles.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/04/10/Using-BioJulia-to-analyze-bamfiles.html" />
+<meta property="og:site_name" content="reading reads" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-04-10T14:10:46-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Getting Started With BioJulia Part 1: Analyzing Bam Files?" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Rowan Callahan"},"dateModified":"2024-04-10T14:10:46-07:00","datePublished":"2024-04-10T14:10:46-07:00","description":"Who is this for?","headline":"Getting Started With BioJulia Part 1: Analyzing Bam Files?","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/04/10/Using-BioJulia-to-analyze-bamfiles.html"},"url":"http://localhost:4000/jekyll/update/2024/04/10/Using-BioJulia-to-analyze-bamfiles.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="reading reads" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">reading reads</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about.html">About</a><a class="page-link" href="/">Posts</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Getting Started With BioJulia Part 1: Analyzing Bam Files?</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2024-04-10T14:10:46-07:00" itemprop="datePublished">Apr 10, 2024
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="who-is-this-for">Who is this for?</h2>
+
+<p>The following may be a weird mish mash of different levels of complexity, hopefully a biologist who is just getting started in programming can use this to write some of their own genomics
+analysis scripts. Or someone from computer science getting started working with sequences can get a little bit of use of what parts of sequencing reads are of use and interesting to biologists.
+However, this post may require a teensy bit of googling or asking mr GPT if you are less familiar with next generation sequencing or have no experience with programming (Sorry!).</p>
+
+<h2 id="why-should-i-care-about-julia">Why should I care about Julia?</h2>
+
+<p>Using Julia for bioinformatics has a few advantages which is the main reason I am choosing to use it for a project in which I am analyzing BAM files. 
+Julia is also getting more popular among datascientists in general and has some cool features. Some of these features make it an ideal alternative to Python or R when we are trying
+to make command line tools to analyze BAM files.
+I like BAM files its a great format, and its pretty ubiquitous in bioinformatics. As I have gotten more into working with sequencing data I have found that I often want to work
+directly with BAM files and access all of the information that they provide before doing further analysis. One example of this is filtering out reads based off of really complex criteria.
+If I have a complicated decision process over whether to use or throw out a read this might change all the time but filtering this out with samtools might be too hard.
+In fact a number of bioinformatic tools are essentially scripts with wrappers over PySam or HTSeq for filtering out reads based off of overlaps with GTF locations and mapping quality.</p>
+
+<p>Originally I thought it might be a good idea to learn C and use the awesome HTSeq written by Heng Li and coauthors. 
+But learning C was pretty hard and I thought it might end up being a waste of time for the uses that I had. 
+While Julia isn’t a C replacement it can offer some of the speed when working with very large sequencing data and has helped me to iterate over experiments quickly 
+where PySam may have made this more difficult to do without having to learn cython, or where using R might have been impossible without writing RCpp code.</p>
+
+<p>The main downside compared to C, GO and Rust is that Julia doesn’t quite have a static compiler available yet, meaning that in some ways it will still be pretty similar
+to python tools in terms of ease of installation. So if you do want to create a tool you will need to supply it as a script.
+There are a lot of tools that might be nice to have in the bioinformatics ecosystem for working with BAM files. DeepTools, Samtools, Bedtools, Picard, and GATK
+( as well as many others that I am blanking on here, whoops, thanks for your work in the ecosystem!) are some very popular tools that perform read filtering and are essentially toolkits for working with bamfiles.
+Notably people often do not write scripts to process bamfiles themselves.</p>
+
+<p>Often instead of creating custom scripts I seem to approximate this using piping and using many of the above tools.
+However I want to be able to start working with reads directly and also process them quickly. 
+When I saw that BioJulia existed and had a number of packages I thought that this could potentially be a much easier avenue than learning C and or trying to work with PySam, pyRanges or GenomicRanges and dealing with speed issues when I have to deal with the parts of the program that won’t end up just being a wrapper around a C library.
+While GenomicRanges, PyRanges, and PySam are all extremely fast as they are wrappers of C once you get the data out you are always going to have some level of bottleneck working with Python and R. You can always try using packages like DataTable and Numpy but its easier if you can just program in a “dumb” style without having to use someone elses libraries sometimes.</p>
+
+<p>Again this was an assumption that I made which may not be quite true, I also wanted an excuse to learn Julia and complete the Python, R, Julia trifecta.
+This blog post is my attempt at writing some of the missing “introductory walkthroughs” for BioJulia usage.
+I intend to update this and my other posts and add more information for working with Julia. For today the main questions we will be asking are;
+how would I get genecounts from a bamfile using BioJulia? A popular tool to do this is htseq-count written in python because it allows to filter by strict coverage. 
+Another faster tool is called FeatureCounts which is written in C.</p>
+
+<p>We will be working with just Julia in order to read in the bam file and count overlaps with genes. As you will see we also are able to filter out Bamfiles like we might do before hand with samtools
+Finally we can do some extra “tricks” fairly easily that might be something we would do with Picard.
+Depending on time I may add a final post showing how to make graphics similar to DeepTools and RseqQC using BioJulia as well.</p>
+
+<h2 id="writing-your-first-few-lines">Writing your first few lines</h2>
+
+<p>During this walkthrough I will be using Pluto.jl a julia package for making interactive notebooks to create and work with sequences.
+The main packages that I am using in this analysis is <code class="highlighter-rouge">XAM.jl</code> for processing BamFiles and Samfile records.
+I am also using BioSequences in order to potentially do some processing of the sequences. Currently the head of your Pluto notebook should have a cell that looks like this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>using XAM, BioSequences, GenomicFeatures
+</code></pre></div></div>
+
+<p>Next we are going to try and open a bamfile and look at the first read. For our purposes lets say we have a bam file called <code class="highlighter-rouge">~/path/to/dir/example.bam</code> .
+We are going to open it and take a look at the first few reads, and what information they contain. Here is an example of what we are going to run next.</p>
+
+<div class="language-julia highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">begin</span>
+<span class="n">filename</span> <span class="o">=</span> <span class="s">"/path/to/dir/example.bam"</span>
+<span class="c">#create a reader object using the file we have supplied</span>
+<span class="n">reader</span> <span class="o">=</span> <span class="n">open</span><span class="x">(</span><span class="n">BAM</span><span class="o">.</span><span class="n">Reader</span><span class="x">,</span> <span class="n">filename</span><span class="x">)</span>
+	
+<span class="n">record</span> <span class="o">=</span> <span class="n">BAM</span><span class="o">.</span><span class="n">Record</span><span class="x">()</span>
+<span class="c">#make sure that the record is empty</span>
+<span class="c">#( this would be useful when  looping over multiple reads)</span>
+<span class="n">empty!</span><span class="x">(</span><span class="n">record</span><span class="x">)</span>
+
+<span class="c">#get the read from the reader and push it to the empty record object.</span>
+<span class="n">read!</span><span class="x">(</span><span class="n">reader</span><span class="x">,</span> <span class="n">record</span><span class="x">)</span>
+
+<span class="c">#close the reader after we have read one sequence</span>
+<span class="n">close</span><span class="x">(</span><span class="n">reader</span><span class="x">)</span>
+
+<span class="c">#Use the BAM.sequence method to get the sequence from the BAM record object</span>
+<span class="n">bam_sequence</span> <span class="o">=</span> <span class="n">BAM</span><span class="o">.</span><span class="n">sequence</span><span class="x">(</span><span class="n">record</span><span class="x">)</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Note that I have wrapped the entire command in a <code class="highlighter-rouge">begin your code here end</code> block because pluto makes sure that code can be placed in any order and automatically updates if you want to paste a code block it needs to be wrapped with this.
+However, this code would work the exact same if you separated each line of code into a new line when pasting it into pluto.</p>
+
+<p>We can now see that there has been a sequence printed out to the main plot. This is great we can access the direct sequences from our bam file! What if we want to see where it mapped to?
+Lets check the documentation for <code class="highlighter-rouge">XAM.jl</code></p>
+
+<p><a href="https://biojulia.dev/XAM.jl/dev/man/hts-files/#SAM-and-BAM-Records">link to documentation of xam</a></p>
+
+<p>We can use <code class="highlighter-rouge">XAM.BAM.refname</code> to get the chromosome or contig (big genomic chunk you get which you might not be sure what it is or if its complete when assembling the genome) name.
+If we scroll down we can find even more ways to access the information that is stored for each read in the Bam file. <code class="highlighter-rouge">XAM.BAM.position</code> will give us the leftmost mapping position of the read.
+Great now we can maybe see if it overlaps with a gene, lets go get the rightmost position as well! <code class="highlighter-rouge">XAM.BAM.rightposition</code></p>
+
+<p>Now lets take this information and turn our read into a “genomic range” that we can check for overlaps with other ranges.</p>
+
+<div class="language-julia highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">begin</span>
+<span class="n">end_position</span> <span class="o">=</span> <span class="n">BAM</span><span class="o">.</span><span class="n">rightposition</span><span class="x">(</span><span class="n">record</span><span class="x">)</span>
+<span class="n">start_position</span> <span class="o">=</span> <span class="n">BAM</span><span class="o">.</span><span class="n">position</span><span class="x">(</span><span class="n">record</span><span class="x">)</span>
+<span class="n">chromosome_name</span> <span class="o">=</span> <span class="n">BAM</span><span class="o">.</span><span class="n">refname</span><span class="x">(</span><span class="n">record</span><span class="x">)</span>
+<span class="k">end</span>
+
+</code></pre></div></div>
+
+<p>Excellent we can now follow the documentation for GenomicIntervals and use the above variables to create a new range: <a href="https://biojulia.dev/GenomicFeatures.jl/latest/intervals/#overlap-query">link to genomic intervals documentation</a></p>
+
+<div class="language-julia highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">begin</span>
+<span class="c">#putting the strand as "." means that we don't include any strand information here</span>
+<span class="c">#if you want you can look for this and add it from the bam reader function in XAM.jl</span>
+<span class="n">our_interval</span> <span class="o">=</span> <span class="n">Interval</span><span class="x">(</span><span class="n">chromosome_name</span><span class="x">,</span> <span class="n">start_position</span><span class="x">,</span> <span class="n">end_position</span><span class="x">,</span> <span class="sc">'.'</span><span class="x">,</span> <span class="n">bam_sequence</span><span class="x">)</span>
+<span class="n">example_gene_interval</span> <span class="o">=</span> <span class="n">Interval</span><span class="x">(</span><span class="n">chromosome_name</span><span class="x">,</span> <span class="n">start_position</span><span class="o">+</span><span class="mi">50</span><span class="x">,</span> <span class="n">end_position</span><span class="o">+</span><span class="mi">50</span><span class="x">,</span> <span class="sc">'.'</span><span class="x">,</span> <span class="s">"EXAMPLE_GENE_ABC"</span><span class="x">)</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Finally if we call an overlap query we can iterate over all the overlaps. Because the example gene has the same location of the other interval just offset by only 50 basepairs 
+we should be able to find an overlap. Our read is probably around 100bp to 150bp long if it came from a classic next generation sequencing technology.
+Before we do this we are first going to make an interval collection. Often times you will want to overlap multiple read against multiple locations, for example when you want to calculate gene counts. In order to do this you first need to add both your reads as well as your gene locations to separate interval collections so that genomicFeatures can quickly
+Search them both for overlaps.</p>
+
+<p>Below is the code that</p>
+<div class="language-julia highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">begin</span>
+<span class="c">#we are going to keep the string metadata that we have added for each gene</span>
+<span class="n">gene_collection</span> <span class="o">=</span> <span class="n">IntervalCollection</span><span class="x">{</span><span class="kt">String</span><span class="x">}()</span>
+<span class="n">push!</span><span class="x">(</span><span class="n">gene_collection</span><span class="x">,</span> <span class="n">example_gene_interval</span><span class="x">)</span>
+
+<span class="c">#we are going to keep the sequence of the string just for fun</span>
+<span class="c">#this might be useful if we wanted to see if all of the reads that map to our gene have some odd feature that</span>
+<span class="c">#we need to worry about.</span>
+<span class="n">read_collection</span> <span class="o">=</span> <span class="n">IntervalCollection</span><span class="x">{</span><span class="kt">String</span><span class="x">}()</span>
+<span class="n">push!</span><span class="x">(</span><span class="n">read_colelction</span><span class="x">,</span> <span class="n">our_interval</span><span class="x">)</span>
+
+<span class="k">for</span> <span class="x">(</span><span class="n">x</span><span class="x">,</span> <span class="n">y</span><span class="x">)</span> <span class="k">in</span> <span class="n">eachoverlap</span><span class="x">(</span><span class="n">gene_collection</span><span class="x">,</span> <span class="n">read_collection</span><span class="x">)</span>
+    <span class="n">println</span><span class="x">(</span><span class="s">"intersection found between "</span><span class="x">,</span> <span class="n">x</span><span class="x">,</span> <span class="s">" and "</span><span class="x">,</span> <span class="n">y</span><span class="x">)</span>
+<span class="k">end</span>
+
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Our output should look something like this, ignoring the exact details.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>intersection found between GenomicFeatures.Interval{String}:
+  sequence name: chr1
+  leftmost position: 10052
+  rightmost position: 10160
+  strand: .
+  metadata: EXAMPLE_GENE_ABC and GenomicFeatures.Interval{String}:
+  sequence name: chr1
+  leftmost position: 10002
+  rightmost position: 10110
+  strand: .
+  metadata: AACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCAAAACAAAA
+
+</code></pre></div></div>
+
+<p>And thats our introduction to working with bam files in Julia. Hopefully this should be helpful to anyone looking to filter reads before performing gene counts or work more closely with bam files in julia.
+There are numerous data science tools that can be used to group_by and perform other data oriented verbs. packages such as DataFrames and Pipe are great for copying a lot of what the tidyverse offers in terms of features. There is also a separate package called Tidier which aims to directly copy much of what the tidyverse has but in julia.</p>
+
+<p>Between DataFrames, Pipe and Tidier the rest of the analysis should be pretty straightforward for analysing a large number of reads and or creating a CSV file that you can then analyze using R or Python.</p>
+
+
+  </div><a class="u-url" href="/jekyll/update/2024/04/10/Using-BioJulia-to-analyze-bamfiles.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">reading reads</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Rowan Callahan</li><li><a class="u-email" href="mailto:rowan.callahan@hey.com">rowan.callahan@hey.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/rowancallahan"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">rowancallahan</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Please reach out if anything is interesting to you or if you would like to work together on any projects!</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

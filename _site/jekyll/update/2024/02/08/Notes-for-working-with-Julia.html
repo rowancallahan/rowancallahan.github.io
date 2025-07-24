@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Getting Started With Julia | reading reads</title>
+<meta name="generator" content="Jekyll v4.0.1" />
+<meta property="og:title" content="Getting Started With Julia" />
+<meta name="author" content="Rowan Callahan" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Getting Started With Julia, notes for bioinformaticians" />
+<meta property="og:description" content="Getting Started With Julia, notes for bioinformaticians" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/02/08/Notes-for-working-with-Julia.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/02/08/Notes-for-working-with-Julia.html" />
+<meta property="og:site_name" content="reading reads" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-02-08T11:08:46-08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Getting Started With Julia" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Rowan Callahan"},"dateModified":"2024-02-08T11:08:46-08:00","datePublished":"2024-02-08T11:08:46-08:00","description":"Getting Started With Julia, notes for bioinformaticians","headline":"Getting Started With Julia","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/02/08/Notes-for-working-with-Julia.html"},"url":"http://localhost:4000/jekyll/update/2024/02/08/Notes-for-working-with-Julia.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="reading reads" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">reading reads</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about.html">About</a><a class="page-link" href="/">Posts</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Getting Started With Julia</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2024-02-08T11:08:46-08:00" itemprop="datePublished">Feb 8, 2024
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="getting-started-with-julia-notes-for-bioinformaticians">Getting Started With Julia, notes for bioinformaticians</h2>
+
+<p>I recently started working with Julia, Below are some initial notes that I have been taking while installing and working with the programming language as well as the advantages that it can provide.</p>
+
+<p>I tried to install originally on macintosh but found that it failed immediately. I was able to run the command to install juliaup however.</p>
+
+<p>Finally the most important part is that you want to be able to use the following command</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+curl -fsSL https://install.julialang.org | sh
+</code></pre></div></div>
+
+<p>Then you can install a new julia version with the following command. Where 1.10 is the software version of the Julia language.</p>
+
+<pre><code class="language-{bash}">
+juliaup add +1.10
+
+</code></pre>
+
+<p>This will add a “channel” where the channel you will pick from the latest versions that are available for julia.
+Currently as of this writing the versions are 1.10 as the stable release version.</p>
+
+<p>https://github.com/jupyter-lsp/jupyterlab-lsp
+install jupyterlab LSP</p>
+
+<h2 id="which-development-environment-to-use">Which Development Environment to use</h2>
+<p>can use pluto 
+VS code is the only one that has julia insider for viewing dataframes
+The vs code plugin can get setup exactly almost the same as Rstudio
+with a few complaints and not as indepth for analysis
+Julia packages</p>
+
+<h3 id="useful-functional-packages">Useful functional packages</h3>
+<p>transducers
+folds</p>
+
+<p>But most of the main things are similar
+still hard to beat R studio for all of its integration that it has.</p>
+
+<hr />
+<h2 id="using-package-compiler">Using Package compiler!</h2>
+
+<p>For compilation need to use
+Pkg.instantiate()
+and Pkg.resolve()</p>
+
+<p>first need to activate a julia project
+start the package manager and do</p>
+
+<p>activate .</p>
+
+<p>Go up a directory then activate
+then rerun package compiler and get it to work
+Then you will have the dependencies correctly listed</p>
+
+<p>https://bkamins.github.io/julialang/2020/05/10/julia-project-environments.html</p>
+
+<p>Julia has made a breaking change in the types
+instead of using void the type is now “nothing”</p>
+
+<p>make sure to include this when you are running the code.</p>
+
+<h2 id="transducers-and-automa-for-quickly-parsing-files-are-also-available">Transducers and automa for quickly parsing files are also available</h2>
+<p>https://docs.juliahub.com/General/FiniteStateTransducers/stable/
+if you care about weighted finite state transducers</p>
+
+<h2 id="how-do-i-rbind-in-julia">How do I rbind in julia?</h2>
+<p>want to make a dataframe from a list of vectors</p>
+
+<p>Using vcat fpr rbinding matrices, or hcat for cbinding matrices. Once you have the matrix worked out then you can easily turn this into a dataframe.</p>
+
+<h2 id="vim-plugin">VIM Plugin</h2>
+
+<p>I use chad nvim and found there were a few things to be aware of because of the lazy package installation.</p>
+
+<p>to get vim stuff working for inserting hte unicode symbols you need to do a ton of stuff that will take a lot of time
+https://github.com/folke/lazy.nvim/blob/c734d941b47312baafe3e0429a5fecd25da95f5f/README.md#L104</p>
+
+<p>you need to only load it when ft is true</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="p">{</span>
+    <span class="s2">"JuliaEditorSupport/julia-vim"</span><span class="p">,</span>
+    <span class="n">ft</span><span class="o">=</span><span class="s2">".jl"</span><span class="p">,</span>
+    <span class="n">config</span><span class="o">=</span><span class="kc">true</span>
+  <span class="p">},</span>
+</code></pre></div></div>
+
+<p>in your package spec change lazy to a different boolean
+it won’t work and install when you use lazy loading and it will automatically detect the filetype for you anyway
+lazy 	boolean?</p>
+
+<p>https://docs.julialang.org/en/v1/manual/unicode-input/</p>
+
+  </div><a class="u-url" href="/jekyll/update/2024/02/08/Notes-for-working-with-Julia.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">reading reads</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Rowan Callahan</li><li><a class="u-email" href="mailto:rowan.callahan@hey.com">rowan.callahan@hey.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/rowancallahan"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">rowancallahan</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Please reach out if anything is interesting to you or if you would like to work together on any projects!</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

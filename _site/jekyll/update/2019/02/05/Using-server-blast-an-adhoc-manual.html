@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Actually getting started with Blast and Blastn | reading reads</title>
+<meta name="generator" content="Jekyll v4.0.1" />
+<meta property="og:title" content="Actually getting started with Blast and Blastn" />
+<meta name="author" content="Rowan Callahan" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Blast is a great tool and one that people in bioinformatics use all the time. In many ways it is akin to the biological version of grep. However with that ubiquity comes some assumptions that can make it hard to get started." />
+<meta property="og:description" content="Blast is a great tool and one that people in bioinformatics use all the time. In many ways it is akin to the biological version of grep. However with that ubiquity comes some assumptions that can make it hard to get started." />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2019/02/05/Using-server-blast-an-adhoc-manual.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2019/02/05/Using-server-blast-an-adhoc-manual.html" />
+<meta property="og:site_name" content="reading reads" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-02-05T07:50:46-08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Actually getting started with Blast and Blastn" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Rowan Callahan"},"dateModified":"2019-02-05T07:50:46-08:00","datePublished":"2019-02-05T07:50:46-08:00","description":"Blast is a great tool and one that people in bioinformatics use all the time. In many ways it is akin to the biological version of grep. However with that ubiquity comes some assumptions that can make it hard to get started.","headline":"Actually getting started with Blast and Blastn","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2019/02/05/Using-server-blast-an-adhoc-manual.html"},"url":"http://localhost:4000/jekyll/update/2019/02/05/Using-server-blast-an-adhoc-manual.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="reading reads" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">reading reads</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about.html">About</a><a class="page-link" href="/">Posts</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Actually getting started with Blast and Blastn</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-02-05T07:50:46-08:00" itemprop="datePublished">Feb 5, 2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Blast is a great tool and one that people in bioinformatics use all the time. In many ways it is akin to the biological version of grep. However with that ubiquity comes some assumptions that can make it hard to get started.</p>
+
+<p>Most people already know how to use the command line tool if they are using it, and often times it an be very hard to find easy quickstart documentation that both isn’t too simple, and doesn’t throw you in the deep end.</p>
+
+<p>After using the server version of blast a while ago I came across a time recently where I needed to use it again, and had promptly forgotten all the different options that there were. For my purposes the use of blastn is the best option but I could not for the life of me find any good complete-ish quickstart guide that would allow me to actually use blast without interpreting the bizarre -help option.</p>
+
+<p>Ironically getting started and using blast is quite easy if you are looking to do some simple searching scores, and it only relies upon a few different options to get started.</p>
+
+<p>A basic blast search from a blast database to the sequences that you care about might look like this.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>blastn -db /path/to/blastdb -query /path/to/fasta -out /path/to/outfile -outfmt 6 -perc_identity 80
+
+</code></pre></div></div>
+
+<p>Pretty basic but lest break it down why you would use these options and what other options are available</p>
+
+<p>The database that I am using is a local database, non local databases can be used and some are automatically defined with blast.</p>
+
+<p>However if you have a fasta file of nucleotides it is pretty easy to make a blast db with the makeblastdb command.</p>
+
+<p>the query is the file that you are searching through. Blastn will search through all of the query sequences to see if any of the blastdb sequences are close to the query.</p>
+
+<p>The outfile is pretty self explanatory it is just a path to where you want the path to be</p>
+
+<p>outfmt is one that can be changed and it is possible that a string format is used to provide more data than just one of the premade formats that exists. The outfmt 6 specifies a tab delimited output in this order</p>
+
+<p>perc_identity is asks you how much of the db should match onto your query, if all of one of the db sequences matches onto your query then that is pretty good. Filtering by e value is also something that is a good idea just to toss out what is ~obviously~ junk or not a good match.</p>
+
+<p>In order to make a quickstart a little easier and a little less painless I have also created a man page for blast that can be accessed <a href="https://github.com/rowancallahan/short_bioinformatics_scripts">here</a>. Here is also a printout of it if grabbing from github is a little more work than its worth.</p>
+
+<p>This is the output of running</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/rowancallahan/short_bioinformatics_scripts
+cd short_bioinformatics_scripts
+man ./blast_unoficcial_man.1
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BLASTN(1)                              General Commands Manual                              BLASTN(1)
+
+~~How do you actually use BLASTN?~~ A practical quick start manual for BLASTN
+
+BLASTN - Basic Linear Alignment Search Tool
+       blastn [-db blast-database ] [-query file ] [-out out-file ] ...
+
+DESCRIPTION
+       BLASTN A common and popular tool used to search for nucleotide sequences that match a sequence
+       in a database.  This tool uses has been in use for a long time and is quite fast for searching
+       many  sequences  for  matches against multiple other sequences.  BLASTP is the version of this
+       tool for proteins.  Much of this manual is taken from either the NCBI website or other website
+       such as biostars or school trainings on how to use BLAST.
+
+OPTIONS
+       -evalue
+              Expectation value (E) threshold for saving hits default is 10
+
+       -outfmt
+              puts  out  the file in the specified out format if you 6 is for tab separated, 7 is for
+              tab separated with comments for the names of each of the columns. See blastn (2)
+
+       -perc_identity
+              What percent identity does the sequence from the database have to match onto the  query
+              sequence.
+
+OUTPUT TYPES
+       The following section is a cut and paste from the BLASTN -help option
+
+       outfmt &lt;String&gt;
+          alignment view options:
+            0 = Pairwise,
+            1 = Query-anchored showing identities,
+            2 = Query-anchored no identities,
+            3 = Flat query-anchored showing identities,
+            4 = Flat query-anchored no identities,
+            5 = BLAST XML,
+            6 = Tabular,
+            7 = Tabular with comment lines,
+            8 = Seqalign (Text ASN.1),
+            9 = Seqalign (Binary ASN.1),
+           10 = Comma-separated values,
+           11 = BLAST archive (ASN.1),
+           12 = Seqalign (JSON),
+           13 = Multiple-file BLAST JSON,
+           14 = Multiple-file BLAST XML2,
+           15 = Single-file BLAST JSON,
+           16 = Single-file BLAST XML2,
+           17 = Sequence Alignment/Map (SAM),
+           18 = Organism Report
+
+          Options 6, 7, 10 and 17 can be additionally configured to produce
+          a custom format specified by space delimited format specifiers.
+          The supported format specifiers for options 6, 7 and 10 are:
+                   qseqid means Query Seq-id
+                      qgi means Query GI
+                     qacc means Query accesion
+                  qaccver means Query accesion.version
+                     qlen means Query sequence length
+                   sseqid means Subject Seq-id
+                sallseqid means All subject Seq-id(s), separated by a ';'
+                      sgi means Subject GI
+                   sallgi means All subject GIs
+                     sacc means Subject accession
+                  saccver means Subject accession.version
+                  sallacc means All subject accessions
+                     slen means Subject sequence length
+                   qstart means Start of alignment in query
+                     qend means End of alignment in query
+                   sstart means Start of alignment in subject
+                     send means End of alignment in subject
+                     qseq means Aligned part of query sequence
+                     sseq means Aligned part of subject sequence
+                   evalue means Expect value
+                 bitscore means Bit score
+                    score means Raw score
+                   length means Alignment length
+                   pident means Percentage of identical matches
+                   nident means Number of identical matches
+                 mismatch means Number of mismatches
+                 positive means Number of positive-scoring matches
+                  gapopen means Number of gap openings
+                     gaps means Total number of gaps
+                     ppos means Percentage of positive-scoring matches
+                   frames means Query and subject frames separated by a '/'
+                   qframe means Query frame
+                   sframe means Subject frame
+                     btop means Blast traceback operations (BTOP)
+                   staxid means Subject Taxonomy ID
+                 ssciname means Subject Scientific Name
+                 scomname means Subject Common Name
+               sblastname means Subject Blast Name
+                sskingdom means Subject Super Kingdom
+                  staxids means unique Subject Taxonomy ID(s), separated by a ';'
+                                (in numerical order)
+                sscinames means unique Subject Scientific Name(s), separated by a ';'
+                scomnames means unique Subject Common Name(s), separated by a ';'
+               sblastnames means unique Subject Blast Name(s), separated by a ';'
+                                (in alphabetical order)
+               sskingdoms means unique Subject Super Kingdom(s), separated by a ';'
+                                (in alphabetical order)
+                   stitle means Subject Title
+               salltitles means All Subject Title(s), separated by a '&lt;&gt;'
+                  sstrand means Subject Strand
+                    qcovs means Query Coverage Per Subject
+                  qcovhsp means Query Coverage Per HSP
+                   qcovus means Query Coverage Per Unique Subject (blastn only)
+          When not provided, the default value is:
+          'qaccver saccver pident length mismatch gapopen qstart qend sstart send
+          evalue bitscore', which is equivalent to the keyword 'std'
+
+BUGS
+       The  documentation  can  be  difficult and hard to read. So far I have not had any issues with
+       blast however, more info available at https://www.ncbi.nlm.nih.gov/books/NBK279670/
+
+AUTHOR
+       Rowan Callahan and sundry internet blogs if you have actual questions please email someone who
+       isn't me &lt;blast-help at ncbi.nlm.nih.gov&gt;
+
+SEE ALSO
+       blastn(2), blastp(1)
+
+User Manuals                                    Rowan                                       BLASTN(1)
+
+</code></pre></div></div>
+
+
+  </div><a class="u-url" href="/jekyll/update/2019/02/05/Using-server-blast-an-adhoc-manual.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">reading reads</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Rowan Callahan</li><li><a class="u-email" href="mailto:rowan.callahan@hey.com">rowan.callahan@hey.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/rowancallahan"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">rowancallahan</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Please reach out if anything is interesting to you or if you would like to work together on any projects!</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

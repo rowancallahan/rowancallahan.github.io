@@ -1,0 +1,204 @@
+---
+---
+
+@import "minima";
+
+// Gruvbox Light Theme Colors
+$gruvbox-bg0: #fbf1c7;
+$gruvbox-bg1: #ebdbb2;
+$gruvbox-bg2: #d5c4a1;
+$gruvbox-fg0: #282828;
+$gruvbox-fg1: #3c3836;
+$gruvbox-blue: #458588;
+$gruvbox-green: #98971a;
+$gruvbox-orange: #d65d0e;
+$gruvbox-red: #cc241d;
+$gruvbox-yellow: #d79921;
+$gruvbox-purple: #b16286;
+$gruvbox-aqua: #689d6a;
+
+// Claude's font stack - override minima's default
+$base-font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+// Apply gruvbox light theme
+body {
+  background-color: $gruvbox-bg0;
+  color: $gruvbox-fg0;
+  font-family: $base-font-family !important;
+  line-height: 1.6;
+}
+
+// Header styling
+.site-header {
+  border-top: 5px solid $gruvbox-blue;
+  border-bottom: 1px solid $gruvbox-bg2;
+  background-color: $gruvbox-bg1;
+}
+
+.site-title,
+.site-title:visited {
+  color: $gruvbox-fg0;
+  font-weight: 600;
+}
+
+.site-nav .page-link {
+  color: $gruvbox-fg1;
+  
+  &:hover {
+    color: $gruvbox-blue;
+    text-decoration: none;
+  }
+}
+
+// Content styling
+.page-content {
+  background-color: $gruvbox-bg0;
+}
+
+// Links
+a {
+  color: $gruvbox-blue;
+  
+  &:visited {
+    color: $gruvbox-purple;
+  }
+  
+  &:hover {
+    color: $gruvbox-green;
+    text-decoration: underline;
+  }
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  color: $gruvbox-fg0;
+  font-weight: 600;
+}
+
+// Post list styling
+.post-list {
+  li {
+    border-bottom: 1px solid $gruvbox-bg2;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.post-meta {
+  color: $gruvbox-fg1;
+  font-style: italic;
+}
+
+.post-link {
+  color: $gruvbox-fg0;
+  font-weight: 500;
+  
+  &:hover {
+    color: $gruvbox-blue;
+  }
+}
+
+// Code blocks
+pre, code {
+  background-color: $gruvbox-bg1;
+  border: 1px solid $gruvbox-bg2;
+  color: $gruvbox-fg0;
+}
+
+.highlight {
+  background-color: $gruvbox-bg1;
+}
+
+// Blockquotes
+blockquote {
+  border-left: 4px solid $gruvbox-orange;
+  background-color: $gruvbox-bg1;
+  padding: 15px;
+  margin: 20px 0;
+  font-style: italic;
+  color: $gruvbox-fg1;
+}
+
+// Footer
+.site-footer {
+  background-color: $gruvbox-bg1;
+  border-top: 1px solid $gruvbox-bg2;
+  color: $gruvbox-fg1;
+}
+
+// Professional styling enhancements
+.wrapper {
+  max-width: 900px;
+}
+
+// Profile image styling
+.img-responsive {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+  margin: 20px 0;
+}
+
+// About page enhancements
+.page-content {
+  h3 {
+    color: $gruvbox-blue;
+    border-bottom: 2px solid $gruvbox-bg2;
+    padding-bottom: 5px;
+    margin-top: 30px;
+  }
+  
+  // Better list styling
+  ul {
+    li {
+      margin-bottom: 8px;
+    }
+  }
+  
+  // Improved paragraph spacing
+  p {
+    margin-bottom: 16px;
+  }
+  
+  // Better emphasis styling
+  strong {
+    color: $gruvbox-fg0;
+    font-weight: 600;
+  }
+}
+
+// Table styling
+table {
+  background-color: $gruvbox-bg0;
+  border: 1px solid $gruvbox-bg2;
+  
+  th {
+    background-color: $gruvbox-bg1;
+    color: $gruvbox-fg0;
+    border: 1px solid $gruvbox-bg2;
+  }
+  
+  td {
+    border: 1px solid $gruvbox-bg2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: $gruvbox-bg1;
+  }
+}
+
+// Mobile responsiveness improvements
+@media screen and (max-width: 600px) {
+  .img-responsive {
+    max-width: 150px;
+  }
+  
+  .wrapper {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

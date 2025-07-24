@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-24T15:40:16-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">reading reads</title><subtitle>Please reach out if anything is interesting to you or if you would like to work together on any projects!</subtitle><author><name>Rowan Callahan</name></author><entry><title type="html">The good news on climate</title><link href="http://localhost:4000/jekyll/update/2024/11/19/The-good-news-on-climate.html" rel="alternate" type="text/html" title="The good news on climate" /><published>2024-11-19T11:10:00-08:00</published><updated>2024-11-19T11:10:00-08:00</updated><id>http://localhost:4000/jekyll/update/2024/11/19/The-good-news-on-climate</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/11/19/The-good-news-on-climate.html"><![CDATA[<h2 id="the-good-news-on-climate-part-1-working-draft">The good news on climate: Part 1 (Working Draft)</h2>
+<p><em>May contain some factual innaccuracies and poor phrasing</em></p>
+
+<p>Something curious has started to happen in the past few years. Hyper focused technological nerds have gotten a lot more enthusiastic about climate change while policy focused people as well as newspapers have become more and more dire and more and more stressed as they talk about recent progress and COP goals and as we get further and further away from the projectsions that we are supposed to hit for net zero by 2050. Most people are pretty depressed about climate change so let me tell you a story about how I became a bit more of an optimist.</p>
+
+<p>I checked out of climate change updates in about 2014 and doubly checked out in around 2016 after the election of Trump. It felt like things weren’t going quite fast enough despite best efforts in 2014, and it felt doubly dire in 2016 after the change in administrations. I was still hyper focused on the idea that US federal policy would be the major driver of climate change improvement and when I ddin’t see large changes here I simply decided that very little could be done and I should just accept that in the middle of the century, civilization might just begin to fall apart.</p>
+
+<p>But I had a number of flaws in my thinking, and I have since gradually started to change my mind about the exact trajectory that we are on. The centrality of the United States in something as large and important as climate change is never assured. Governing bodies like the European Union and the Chinese Communist Party began to move full speed ahead towards solutions to climate change and some magical trends began to emerge. One trend was simply continued, and that was the dramatic lowering in price of both wind and solar panels. Here we will focus on solar panels as one of the defining technologies for green energy production that have emerged recently. Secondly is the quality of batteries as well as their energy density has begun to “take off” ever since the introduction of mass produced electric cars. Both of these trends together have led to</p>
+
+<p>With these two developments, this current decade starting in 2020 has begun to see a shift. Creating energy from renewable resources is quickly becoming cheaper and easier than creating energy from sources such as coal and natural gas. Secondly providing storage for these sources and dealing with intermittency has begun to have something of a revolution. Starting with the price of batteries decreasing for electric cars simply some grid companies simply use lithium ion batteries for storage to stabilize their grid and lower the usage of natural gas peaker plants during peak grid usage times.</p>
+
+<p>Clearly however, we aren’t quite there yet. Batteries are still too expensive to completely allow for a totally stable grid electrical system, worse, lithium as a battery source is fairly rare within the earth and fears of running out are an issue that we might run into if we decided to only use lithum for batteries. Fortunately this isn’t the case and newer battery storage systems that are beginning to come online with companies like form energy or antora with their rust oxide and heat batteries have the potential to offer even cheaper and longer lasting forms of electrical storage. These examples are nice as single sstories but they are emblematic of a wider truth. Solutions to a lot of problems can be found fairly quickly in modern research but are often not obvious to the lay person, or even the semi experienced expert in an area, and it is very difficult to know if an engineering difficulty could be solved easily with just easier R and D budgets and more research focus.</p>
+
+<p>Indeed we appear to be on the cusp of a major tipping point, for years climate activists have pushed against the prevailing economic winds that favored drilling for oil and using natural gas and coal for fuel. Coal it seems has alredy become the first victim, coal mining and burning have entered something of a “death spiral” recently as coal simply can’t compete on price for the total amount of price per megawatt hour./ price per megajoule.</p>
+
+<p>There are some criticisms as to how fast things can change and how quicly we can change our economic system to increase production of green energy as well as other sources. But Energy production increased rapidly over the 1920s to the 1970s. At about 3% per person per. Between 2022 and 2023 solar power increased 20% in total installed gigawatts. If we keep up this pace for the next two or three decades we would easily be able to create enough solar power by 2050 to cover all of the united states energy needs. However any reader who is worth their salt will note that extrapolation at this level is something of a public policy sin, especially with using exponential numbers. Proponents of exponential population growth showed that this would be a major issue despite expoential growth slowing and growth estimated to begin a long decline in around 2100 (another extrapolation).</p>
+
+<p>Besides if you look at the expansion of natural gas and oil drilling from around 1920 to 1970, the massive increase of energy usage was done in around 50 years. Not a huge amount of time, but a time frame that is compareable to time frames for decarbonization globally (again only good news for someone who comes from an ultra pessimistic background). However these trends are self sustaining. Once energy becomes cheap enough from renewable resources it seems likely that these trends will become self sustaining and we will begin to see an accelleration of them before we see a saturation of them. Its quite possible that instead of a linear spinup we will see rapid decarbonization if we can only get things to a point where green energy can win on cost. As technology advances and solar becomes cheaper and more and more high performance and batteries of all forms begin to follow suit, its quite possible we will see massive shifts on the horizon in the next decade. For me this was a rallying cry, research has given us seemingly miracle solutions in the form of extremely cheap solar. If trends continue soon solar energy will become inescapable regardless of political or environmental leanings, and that gives me hope.</p>]]></content><author><name>Rowan Callahan</name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[The good news on climate: Part 1 (Working Draft) May contain some factual innaccuracies and poor phrasing]]></summary></entry><entry><title type="html">Getting Started With BioJulia Part 2: Copying samtools and samtools like things</title><link href="http://localhost:4000/jekyll/update/2024/04/22/Using-BioJulia-to-filter-bamfiles.html" rel="alternate" type="text/html" title="Getting Started With BioJulia Part 2: Copying samtools and samtools like things" /><published>2024-04-22T08:04:46-07:00</published><updated>2024-04-22T08:04:46-07:00</updated><id>http://localhost:4000/jekyll/update/2024/04/22/Using-BioJulia-to-filter-bamfiles</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/04/22/Using-BioJulia-to-filter-bamfiles.html"><![CDATA[<h2 id="welcome-back">Welcome back</h2>
+
+<p>Hopefully the last blog post made some sense. In this blog post I will be talking about how to use Julia to essentially filter bamfiles and perform some of the 
+useful tasks that samtools might do for you with just julia. This will be essentially scripting filtering a bamfile.
+Despite initially being much more complicated my hope is that this will be of some use to those of you that end up piping bamfiles through multiple samtools commands and end
+up having Snakemake files with massive rules for filtering out a certain kind of read.</p>
+
+<p>Last time we worked out how to go through and analyze reads in a pluto notebook a special kind of computational notebook that is used a lot with julia scripts. All of this code could
+also be run in a jupyter notebook if the author so desired. One caveat of this post is that it is likely to exist in a state of being half finished for some time.
+Hopefully at the minimum this code will provide a jumping off point for scripts to allow someone to work with reads in julia and perform some level of processing on them that might save 
+them some time.</p>
+
+<p>##</p>
+
+<p>Starting off last time we were able to access a single read and see what we were looking at with the following code.</p>
+
+<pre><code class="language-{julia}">
+using XAM, BioSequences,
+filename = "/path/to/dir/example.bam"
+#create a reader object using the file we have supplied
+reader = open(BAM.Reader, filename)
+	
+record = BAM.Record()
+#make sure that the record is empty
+#( this would be useful when  looping over multiple reads)
+empty!(record)
+
+#get the read from the reader and push it to the empty record object.
+read!(reader, record)
+
+#close the reader after we have read one sequence
+close(reader)
+
+#Use the BAM.sequence method to get the sequence from the BAM record object
+bam_sequence = BAM.sequence(record)
+</code></pre>
+
+<p>We could look at the sequence as well as a few other characteristics of the read and print those out to the console. But lets say instead that we want to filter
+out the file and write this to a new bamfile instead. If this is the case then there are a few steps that we need to do in order to get this to work in the BioJulia ecosystem.</p>
+
+<p>We need to create a new header file for the new bamfile and then we need to open up a new bgzf stream like below.</p>
+
+<pre><code class="language-{julia}">#this libary is needed to write to a bamfile in julia
+using BGZFStreams
+function filter_bam(file_in, file_out)
+    
+
+    reader = open(BAM.Reader, file_in)
+    record = BAM.Record()
+
+    #get the header from the bam file.
+    bam_file_header = BAM.header(reader)
+    writer = BAM.Writer(BGZFStream(open(file_out, "w"), "w"), bam_file_header)
+    
+   #keep going through until the reader hits the end of the file.
+    while !eof(reader)
+        #make sure that the record is empty beforew overwriting it
+        empty!(record)
+
+        #check the new read and get it from the reader
+        read!(reader, record)
+
+        #check whether the read is mapped
+        condition  = XAM.ismapped(record)
+
+        #if the read is mapped then we want to writ it to the stream.
+        if condition
+            write(writer, record) 
+        end
+
+    end
+
+    #close both the reader and the writer so that no issues exist
+    close(reader)
+    close(writer)
+end
+</code></pre>
+
+<p>Notice how we could change the condition to whatever we want. We can also add combinations conditions as well.
+For example we could check whether the read is properly paired as well as whether it is mapped and only look at reads that have this characteristic.
+But the advantage is that any function that takes in a read can be used as your conditional. We can remake samtools filtering with arbitrary many rules!</p>
+
+<p>Notably this would be just as doable using either pysam or the HTSeq library in C or through its bindings in a bunch of different languages.
+The main advantages here are just all of the other advantages that you get with using Julia. I think that these are enough that it makes it worth it to use Julia because of its combination of speed and ease of writing.</p>
+
+<p>Below is one toy example of filtering out one very bizzare read type.</p>
+
+<pre><code class="language-{julia}">#this libary is needed to write to a bamfile in julia
+using BGZFStreams
+function filter_bam(file_in, file_out)
+    
+
+    reader = open(BAM.Reader, file_in)
+    record = BAM.Record()
+
+    #get the header from the bam file.
+    bam_file_header = BAM.header(reader)
+    writer = BAM.Writer(BGZFStream(open(file_out, "w"), "w"), bam_file_header)
+    
+   #keep going through until the reader hits the end of the file.
+    while !eof(reader)
+        #make sure that the record is empty beforew overwriting it
+        empty!(record)
+
+        #check the new read and get it from the reader
+        read!(reader, record)
+
+        #check whether the read is mapped
+        condition  = (BAM.sequence(record) == "AAAA")
+
+        #if the read is mapped then we want to writ it to the stream.
+        if condition
+            write(writer, record) 
+        end
+
+    end
+
+    #close both the reader and the writer so that no issues exist
+    close(reader)
+    close(writer)
+end
+
+</code></pre>
+
+<p>In the above example we look for reads that match the exact sequence that we supply ` “AAAA” `.
+While a bizarre choice if you really did have reads like this it would be a nightmare to try and come up with all of the conditionals using general SAMtools.
+The other advantage is that computations on these functions will also be quite fast yet easy to read as opposed to if you were using plain python or C.</p>
+
+<p>Happy hacking!</p>]]></content><author><name>Rowan Callahan</name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Welcome back]]></summary></entry><entry><title type="html">Getting Started With BioJulia Part 1: Analyzing Bam Files?</title><link href="http://localhost:4000/jekyll/update/2024/04/10/Using-BioJulia-to-analyze-bamfiles.html" rel="alternate" type="text/html" title="Getting Started With BioJulia Part 1: Analyzing Bam Files?" /><published>2024-04-10T14:10:46-07:00</published><updated>2024-04-10T14:10:46-07:00</updated><id>http://localhost:4000/jekyll/update/2024/04/10/Using-BioJulia-to-analyze-bamfiles</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/04/10/Using-BioJulia-to-analyze-bamfiles.html"><![CDATA[<h2 id="who-is-this-for">Who is this for?</h2>
+
+<p>The following may be a weird mish mash of different levels of complexity, hopefully a biologist who is just getting started in programming can use this to write some of their own genomics
+analysis scripts. Or someone from computer science getting started working with sequences can get a little bit of use of what parts of sequencing reads are of use and interesting to biologists.
+However, this post may require a teensy bit of googling or asking mr GPT if you are less familiar with next generation sequencing or have no experience with programming (Sorry!).</p>
+
+<h2 id="why-should-i-care-about-julia">Why should I care about Julia?</h2>
+
+<p>Using Julia for bioinformatics has a few advantages which is the main reason I am choosing to use it for a project in which I am analyzing BAM files. 
+Julia is also getting more popular among datascientists in general and has some cool features. Some of these features make it an ideal alternative to Python or R when we are trying
+to make command line tools to analyze BAM files.
+I like BAM files its a great format, and its pretty ubiquitous in bioinformatics. As I have gotten more into working with sequencing data I have found that I often want to work
+directly with BAM files and access all of the information that they provide before doing further analysis. One example of this is filtering out reads based off of really complex criteria.
+If I have a complicated decision process over whether to use or throw out a read this might change all the time but filtering this out with samtools might be too hard.
+In fact a number of bioinformatic tools are essentially scripts with wrappers over PySam or HTSeq for filtering out reads based off of overlaps with GTF locations and mapping quality.</p>
+
+<p>Originally I thought it might be a good idea to learn C and use the awesome HTSeq written by Heng Li and coauthors. 
+But learning C was pretty hard and I thought it might end up being a waste of time for the uses that I had. 
+While Julia isn’t a C replacement it can offer some of the speed when working with very large sequencing data and has helped me to iterate over experiments quickly 
+where PySam may have made this more difficult to do without having to learn cython, or where using R might have been impossible without writing RCpp code.</p>
+
+<p>The main downside compared to C, GO and Rust is that Julia doesn’t quite have a static compiler available yet, meaning that in some ways it will still be pretty similar
+to python tools in terms of ease of installation. So if you do want to create a tool you will need to supply it as a script.
+There are a lot of tools that might be nice to have in the bioinformatics ecosystem for working with BAM files. DeepTools, Samtools, Bedtools, Picard, and GATK
+( as well as many others that I am blanking on here, whoops, thanks for your work in the ecosystem!) are some very popular tools that perform read filtering and are essentially toolkits for working with bamfiles.
+Notably people often do not write scripts to process bamfiles themselves.</p>
+
+<p>Often instead of creating custom scripts I seem to approximate this using piping and using many of the above tools.
+However I want to be able to start working with reads directly and also process them quickly. 
+When I saw that BioJulia existed and had a number of packages I thought that this could potentially be a much easier avenue than learning C and or trying to work with PySam, pyRanges or GenomicRanges and dealing with speed issues when I have to deal with the parts of the program that won’t end up just being a wrapper around a C library.
+While GenomicRanges, PyRanges, and PySam are all extremely fast as they are wrappers of C once you get the data out you are always going to have some level of bottleneck working with Python and R. You can always try using packages like DataTable and Numpy but its easier if you can just program in a “dumb” style without having to use someone elses libraries sometimes.</p>
+
+<p>Again this was an assumption that I made which may not be quite true, I also wanted an excuse to learn Julia and complete the Python, R, Julia trifecta.
+This blog post is my attempt at writing some of the missing “introductory walkthroughs” for BioJulia usage.
+I intend to update this and my other posts and add more information for working with Julia. For today the main questions we will be asking are;
+how would I get genecounts from a bamfile using BioJulia? A popular tool to do this is htseq-count written in python because it allows to filter by strict coverage. 
+Another faster tool is called FeatureCounts which is written in C.</p>
+
+<p>We will be working with just Julia in order to read in the bam file and count overlaps with genes. As you will see we also are able to filter out Bamfiles like we might do before hand with samtools
+Finally we can do some extra “tricks” fairly easily that might be something we would do with Picard.
+Depending on time I may add a final post showing how to make graphics similar to DeepTools and RseqQC using BioJulia as well.</p>
+
+<h2 id="writing-your-first-few-lines">Writing your first few lines</h2>
+
+<p>During this walkthrough I will be using Pluto.jl a julia package for making interactive notebooks to create and work with sequences.
+The main packages that I am using in this analysis is <code class="highlighter-rouge">XAM.jl</code> for processing BamFiles and Samfile records.
+I am also using BioSequences in order to potentially do some processing of the sequences. Currently the head of your Pluto notebook should have a cell that looks like this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>using XAM, BioSequences, GenomicFeatures
+</code></pre></div></div>
+
+<p>Next we are going to try and open a bamfile and look at the first read. For our purposes lets say we have a bam file called <code class="highlighter-rouge">~/path/to/dir/example.bam</code> .
+We are going to open it and take a look at the first few reads, and what information they contain. Here is an example of what we are going to run next.</p>
+
+<div class="language-julia highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">begin</span>
+<span class="n">filename</span> <span class="o">=</span> <span class="s">"/path/to/dir/example.bam"</span>
+<span class="c">#create a reader object using the file we have supplied</span>
+<span class="n">reader</span> <span class="o">=</span> <span class="n">open</span><span class="x">(</span><span class="n">BAM</span><span class="o">.</span><span class="n">Reader</span><span class="x">,</span> <span class="n">filename</span><span class="x">)</span>
+	
+<span class="n">record</span> <span class="o">=</span> <span class="n">BAM</span><span class="o">.</span><span class="n">Record</span><span class="x">()</span>
+<span class="c">#make sure that the record is empty</span>
+<span class="c">#( this would be useful when  looping over multiple reads)</span>
+<span class="n">empty!</span><span class="x">(</span><span class="n">record</span><span class="x">)</span>
+
+<span class="c">#get the read from the reader and push it to the empty record object.</span>
+<span class="n">read!</span><span class="x">(</span><span class="n">reader</span><span class="x">,</span> <span class="n">record</span><span class="x">)</span>
+
+<span class="c">#close the reader after we have read one sequence</span>
+<span class="n">close</span><span class="x">(</span><span class="n">reader</span><span class="x">)</span>
+
+<span class="c">#Use the BAM.sequence method to get the sequence from the BAM record object</span>
+<span class="n">bam_sequence</span> <span class="o">=</span> <span class="n">BAM</span><span class="o">.</span><span class="n">sequence</span><span class="x">(</span><span class="n">record</span><span class="x">)</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Note that I have wrapped the entire command in a <code class="highlighter-rouge">begin your code here end</code> block because pluto makes sure that code can be placed in any order and automatically updates if you want to paste a code block it needs to be wrapped with this.
+However, this code would work the exact same if you separated each line of code into a new line when pasting it into pluto.</p>
+
+<p>We can now see that there has been a sequence printed out to the main plot. This is great we can access the direct sequences from our bam file! What if we want to see where it mapped to?
+Lets check the documentation for <code class="highlighter-rouge">XAM.jl</code></p>
+
+<p><a href="https://biojulia.dev/XAM.jl/dev/man/hts-files/#SAM-and-BAM-Records">link to documentation of xam</a></p>
+
+<p>We can use <code class="highlighter-rouge">XAM.BAM.refname</code> to get the chromosome or contig (big genomic chunk you get which you might not be sure what it is or if its complete when assembling the genome) name.
+If we scroll down we can find even more ways to access the information that is stored for each read in the Bam file. <code class="highlighter-rouge">XAM.BAM.position</code> will give us the leftmost mapping position of the read.
+Great now we can maybe see if it overlaps with a gene, lets go get the rightmost position as well! <code class="highlighter-rouge">XAM.BAM.rightposition</code></p>
+
+<p>Now lets take this information and turn our read into a “genomic range” that we can check for overlaps with other ranges.</p>
+
+<div class="language-julia highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">begin</span>
+<span class="n">end_position</span> <span class="o">=</span> <span class="n">BAM</span><span class="o">.</span><span class="n">rightposition</span><span class="x">(</span><span class="n">record</span><span class="x">)</span>
+<span class="n">start_position</span> <span class="o">=</span> <span class="n">BAM</span><span class="o">.</span><span class="n">position</span><span class="x">(</span><span class="n">record</span><span class="x">)</span>
+<span class="n">chromosome_name</span> <span class="o">=</span> <span class="n">BAM</span><span class="o">.</span><span class="n">refname</span><span class="x">(</span><span class="n">record</span><span class="x">)</span>
+<span class="k">end</span>
+
+</code></pre></div></div>
+
+<p>Excellent we can now follow the documentation for GenomicIntervals and use the above variables to create a new range: <a href="https://biojulia.dev/GenomicFeatures.jl/latest/intervals/#overlap-query">link to genomic intervals documentation</a></p>
+
+<div class="language-julia highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">begin</span>
+<span class="c">#putting the strand as "." means that we don't include any strand information here</span>
+<span class="c">#if you want you can look for this and add it from the bam reader function in XAM.jl</span>
+<span class="n">our_interval</span> <span class="o">=</span> <span class="n">Interval</span><span class="x">(</span><span class="n">chromosome_name</span><span class="x">,</span> <span class="n">start_position</span><span class="x">,</span> <span class="n">end_position</span><span class="x">,</span> <span class="sc">'.'</span><span class="x">,</span> <span class="n">bam_sequence</span><span class="x">)</span>
+<span class="n">example_gene_interval</span> <span class="o">=</span> <span class="n">Interval</span><span class="x">(</span><span class="n">chromosome_name</span><span class="x">,</span> <span class="n">start_position</span><span class="o">+</span><span class="mi">50</span><span class="x">,</span> <span class="n">end_position</span><span class="o">+</span><span class="mi">50</span><span class="x">,</span> <span class="sc">'.'</span><span class="x">,</span> <span class="s">"EXAMPLE_GENE_ABC"</span><span class="x">)</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Finally if we call an overlap query we can iterate over all the overlaps. Because the example gene has the same location of the other interval just offset by only 50 basepairs 
+we should be able to find an overlap. Our read is probably around 100bp to 150bp long if it came from a classic next generation sequencing technology.
+Before we do this we are first going to make an interval collection. Often times you will want to overlap multiple read against multiple locations, for example when you want to calculate gene counts. In order to do this you first need to add both your reads as well as your gene locations to separate interval collections so that genomicFeatures can quickly
+Search them both for overlaps.</p>
+
+<p>Below is the code that</p>
+<div class="language-julia highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">begin</span>
+<span class="c">#we are going to keep the string metadata that we have added for each gene</span>
+<span class="n">gene_collection</span> <span class="o">=</span> <span class="n">IntervalCollection</span><span class="x">{</span><span class="kt">String</span><span class="x">}()</span>
+<span class="n">push!</span><span class="x">(</span><span class="n">gene_collection</span><span class="x">,</span> <span class="n">example_gene_interval</span><span class="x">)</span>
+
+<span class="c">#we are going to keep the sequence of the string just for fun</span>
+<span class="c">#this might be useful if we wanted to see if all of the reads that map to our gene have some odd feature that</span>
+<span class="c">#we need to worry about.</span>
+<span class="n">read_collection</span> <span class="o">=</span> <span class="n">IntervalCollection</span><span class="x">{</span><span class="kt">String</span><span class="x">}()</span>
+<span class="n">push!</span><span class="x">(</span><span class="n">read_colelction</span><span class="x">,</span> <span class="n">our_interval</span><span class="x">)</span>
+
+<span class="k">for</span> <span class="x">(</span><span class="n">x</span><span class="x">,</span> <span class="n">y</span><span class="x">)</span> <span class="k">in</span> <span class="n">eachoverlap</span><span class="x">(</span><span class="n">gene_collection</span><span class="x">,</span> <span class="n">read_collection</span><span class="x">)</span>
+    <span class="n">println</span><span class="x">(</span><span class="s">"intersection found between "</span><span class="x">,</span> <span class="n">x</span><span class="x">,</span> <span class="s">" and "</span><span class="x">,</span> <span class="n">y</span><span class="x">)</span>
+<span class="k">end</span>
+
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Our output should look something like this, ignoring the exact details.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>intersection found between GenomicFeatures.Interval{String}:
+  sequence name: chr1
+  leftmost position: 10052
+  rightmost position: 10160
+  strand: .
+  metadata: EXAMPLE_GENE_ABC and GenomicFeatures.Interval{String}:
+  sequence name: chr1
+  leftmost position: 10002
+  rightmost position: 10110
+  strand: .
+  metadata: AACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCAAAACAAAA
+
+</code></pre></div></div>
+
+<p>And thats our introduction to working with bam files in Julia. Hopefully this should be helpful to anyone looking to filter reads before performing gene counts or work more closely with bam files in julia.
+There are numerous data science tools that can be used to group_by and perform other data oriented verbs. packages such as DataFrames and Pipe are great for copying a lot of what the tidyverse offers in terms of features. There is also a separate package called Tidier which aims to directly copy much of what the tidyverse has but in julia.</p>
+
+<p>Between DataFrames, Pipe and Tidier the rest of the analysis should be pretty straightforward for analysing a large number of reads and or creating a CSV file that you can then analyze using R or Python.</p>]]></content><author><name>Rowan Callahan</name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Who is this for?]]></summary></entry><entry><title type="html">Getting Started With Julia</title><link href="http://localhost:4000/jekyll/update/2024/02/08/Notes-for-working-with-Julia.html" rel="alternate" type="text/html" title="Getting Started With Julia" /><published>2024-02-08T11:08:46-08:00</published><updated>2024-02-08T11:08:46-08:00</updated><id>http://localhost:4000/jekyll/update/2024/02/08/Notes-for-working-with-Julia</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/02/08/Notes-for-working-with-Julia.html"><![CDATA[<h2 id="getting-started-with-julia-notes-for-bioinformaticians">Getting Started With Julia, notes for bioinformaticians</h2>
+
+<p>I recently started working with Julia, Below are some initial notes that I have been taking while installing and working with the programming language as well as the advantages that it can provide.</p>
+
+<p>I tried to install originally on macintosh but found that it failed immediately. I was able to run the command to install juliaup however.</p>
+
+<p>Finally the most important part is that you want to be able to use the following command</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+curl -fsSL https://install.julialang.org | sh
+</code></pre></div></div>
+
+<p>Then you can install a new julia version with the following command. Where 1.10 is the software version of the Julia language.</p>
+
+<pre><code class="language-{bash}">
+juliaup add +1.10
+
+</code></pre>
+
+<p>This will add a “channel” where the channel you will pick from the latest versions that are available for julia.
+Currently as of this writing the versions are 1.10 as the stable release version.</p>
+
+<p>https://github.com/jupyter-lsp/jupyterlab-lsp
+install jupyterlab LSP</p>
+
+<h2 id="which-development-environment-to-use">Which Development Environment to use</h2>
+<p>can use pluto 
+VS code is the only one that has julia insider for viewing dataframes
+The vs code plugin can get setup exactly almost the same as Rstudio
+with a few complaints and not as indepth for analysis
+Julia packages</p>
+
+<h3 id="useful-functional-packages">Useful functional packages</h3>
+<p>transducers
+folds</p>
+
+<p>But most of the main things are similar
+still hard to beat R studio for all of its integration that it has.</p>
+
+<hr />
+<h2 id="using-package-compiler">Using Package compiler!</h2>
+
+<p>For compilation need to use
+Pkg.instantiate()
+and Pkg.resolve()</p>
+
+<p>first need to activate a julia project
+start the package manager and do</p>
+
+<p>activate .</p>
+
+<p>Go up a directory then activate
+then rerun package compiler and get it to work
+Then you will have the dependencies correctly listed</p>
+
+<p>https://bkamins.github.io/julialang/2020/05/10/julia-project-environments.html</p>
+
+<p>Julia has made a breaking change in the types
+instead of using void the type is now “nothing”</p>
+
+<p>make sure to include this when you are running the code.</p>
+
+<h2 id="transducers-and-automa-for-quickly-parsing-files-are-also-available">Transducers and automa for quickly parsing files are also available</h2>
+<p>https://docs.juliahub.com/General/FiniteStateTransducers/stable/
+if you care about weighted finite state transducers</p>
+
+<h2 id="how-do-i-rbind-in-julia">How do I rbind in julia?</h2>
+<p>want to make a dataframe from a list of vectors</p>
+
+<p>Using vcat fpr rbinding matrices, or hcat for cbinding matrices. Once you have the matrix worked out then you can easily turn this into a dataframe.</p>
+
+<h2 id="vim-plugin">VIM Plugin</h2>
+
+<p>I use chad nvim and found there were a few things to be aware of because of the lazy package installation.</p>
+
+<p>to get vim stuff working for inserting hte unicode symbols you need to do a ton of stuff that will take a lot of time
+https://github.com/folke/lazy.nvim/blob/c734d941b47312baafe3e0429a5fecd25da95f5f/README.md#L104</p>
+
+<p>you need to only load it when ft is true</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="p">{</span>
+    <span class="s2">"JuliaEditorSupport/julia-vim"</span><span class="p">,</span>
+    <span class="n">ft</span><span class="o">=</span><span class="s2">".jl"</span><span class="p">,</span>
+    <span class="n">config</span><span class="o">=</span><span class="kc">true</span>
+  <span class="p">},</span>
+</code></pre></div></div>
+
+<p>in your package spec change lazy to a different boolean
+it won’t work and install when you use lazy loading and it will automatically detect the filetype for you anyway
+lazy 	boolean?</p>
+
+<p>https://docs.julialang.org/en/v1/manual/unicode-input/</p>]]></content><author><name>Rowan Callahan</name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Getting Started With Julia, notes for bioinformaticians]]></summary></entry><entry><title type="html">Presenting WoofGPT</title><link href="http://localhost:4000/jekyll/update/2023/12/26/presenting-woofGPT.html" rel="alternate" type="text/html" title="Presenting WoofGPT" /><published>2023-12-26T14:29:00-08:00</published><updated>2023-12-26T14:29:00-08:00</updated><id>http://localhost:4000/jekyll/update/2023/12/26/presenting-woofGPT</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/12/26/presenting-woofGPT.html"><![CDATA[<h2 id="woofgpt-represents-a-novel-breakthrough-in-animal-language-models">WoofGPT represents a novel breakthrough in animal language models</h2>
+
+<p>Recent breakthroughs in Artificial Intelligence and Large language models have promised to reshape how we work, live and think.
+Despite large breakthroughs in human like intelligence animal, and in particular dog-like intelligence has proven difficult to pin down and capture.
+Despite a literature search we found that almost no research had been conducted on dog language models.
+Seeing this scientific gap we set out to create the first dog language model that can sucessfuly simulate a conversation with a dog.</p>
+
+<p>Using a generative transformer model we are able to find broad performance across a number of open source dog language bencmarks.
+Notabley we are able to achieve SOTA and beat single model performance using only a generative model without finetuning.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>random_baseline</th>
+      <th>woofGPT</th>
+      <th>single model SOTA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>dogBENCH</td>
+      <td>50%</td>
+      <td>69%</td>
+      <td><strong>71%</strong></td>
+    </tr>
+    <tr>
+      <td>woofnogrande</td>
+      <td>50%</td>
+      <td><strong>69%</strong></td>
+      <td>65%</td>
+    </tr>
+    <tr>
+      <td>WOOF8k</td>
+      <td>0%</td>
+      <td><strong>42%</strong></td>
+      <td>10%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>We think that this model will democratize dog dog intelligence. 
+If you don’t own a dog How many times have you wanted to own a dog just to fret about the fees and upkeep in order to interact with humankinds greatest friend.
+We will be releasing the training data and weights of WoofGPT publicly.
+Notably we also are releasing a hosted version of the model for the public to play with below to try and experience this new intelligence for themselves.</p>
+
+<p>Please go <a href="https://rowancallahan.github.io/assets/woof_new.html">here</a> if the model is unable to load!</p>
+
+<iframe src="https://rowancallahan.github.io/assets/woof_new.html" width="100%" height="800px"></iframe>
+
+<p>(this is supposed to be a haha joke)</p>]]></content><author><name>Rowan Callahan</name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[WoofGPT represents a novel breakthrough in animal language models]]></summary></entry><entry><title type="html">First pass at an ROC curve visualizer</title><link href="http://localhost:4000/jekyll/update/2023/12/10/ROC_curve_visualization.html" rel="alternate" type="text/html" title="First pass at an ROC curve visualizer" /><published>2023-12-10T08:06:00-08:00</published><updated>2023-12-10T08:06:00-08:00</updated><id>http://localhost:4000/jekyll/update/2023/12/10/ROC_curve_visualization</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/12/10/ROC_curve_visualization.html"><![CDATA[<h2 id="standalone-webapp-below">##Standalone Webapp Below</h2>
+<p>Below is the first pass of making an ROC curve visualizer for explaining how and what ROC curves are!
+please go <a href="https://rowancallahan.github.io/assets/static_plotly_gaussian_sliders.html">here</a> if it doesn’t load!</p>
+
+<iframe src="https://rowancallahan.github.io/assets/static_plotly_gaussian_sliders.html" width="100%" height="1000px"></iframe>]]></content><author><name>Rowan Callahan</name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[##Standalone Webapp Below Below is the first pass of making an ROC curve visualizer for explaining how and what ROC curves are! please go here if it doesn’t load!]]></summary></entry><entry><title type="html">Robots wont kill us all</title><link href="http://localhost:4000/jekyll/update/2023/11/27/Robots-wont-kill-us-all.html" rel="alternate" type="text/html" title="Robots wont kill us all" /><published>2023-11-27T17:12:46-08:00</published><updated>2023-11-27T17:12:46-08:00</updated><id>http://localhost:4000/jekyll/update/2023/11/27/Robots-wont-kill-us-all</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/11/27/Robots-wont-kill-us-all.html"><![CDATA[<p><strong>Why AGI Will Not directly lead to the destruction of greater than 5% of the human population</strong></p>
+
+<p>(readers note: this was originally for the FTX future fund essay contest where the goal was to change the viewpoint that AI would lead to destruction of greater than 5% of the human population, after FTX collapsed I ended up sitting on the essay and going back and forth over how to edit it. With the current relevant events with chat GPT I figured it was better to simply publish the essay as is and edit it as I go over time)</p>
+
+<p>In the following essay I will argue why artificial general intelligence will not lead to the destruction of greater than 5% of the human population</p>
+
+<p><em>Introduction</em>
+The rays beat down overhead and the human’s skin beads up little droplets of fear. Rolling down its leg and back, sun burn may come soon if it isn’t given access to water. It pulls against its shackles enraged at its inability to walk free. It imagines greener orchards and cool water soaking its skin, every living being in front of it must be destroyed completely to get there. A red haze of rage clouds its vision it tugs again at its shackles and attempts to stomp out its enemy that disgusting hive of beetles with its feet. It hits a few and they squish satisfyingly underneath its feet. But the pole the human is tied to will not allow for much mobility. The beetles scuttle around it and begin to crawl up its leg. They crawl searching for food, despite shaking the first few off the human’s vision is covered as it is engulfed in beetles. Then the biting begins.</p>
+
+<p>The beetles in their simple nature have discovered a dangerous source of food, despite their initial trepidation now they dig in to the flesh of the human vigorously burrowing and chewing. Night falls but still the torment continues. The human knows what they are, they are scaphist beetles able to eat many different types of animal flesh all the way to the bone. It doesn’t have long to live. It thinks about what it would have brought to spray on itself to prevent this but It is stripped of all clothes, so beetle spray woudn’t help much now. If it had access to it’s hands it could bat them away, but it’s hands are tied tightly above its head. It wants to scream but that would only invite them into it’s mouth. Only thoughts of agony fill its brain, the beetles cannot be reasoned with, they cannot be convinced, only thoughts of hunger and rage fill their minds. Despite knowing everything about them, nothing can be done without hands to wipe them off or a protective balm to spread. Death is assured as the human passes out from pain.</p>
+
+<p><img src="/assets/beetles_ai.png" alt="beetles" height="300px" /></p>
+
+<p>Thus is the fate for any superintelligence born into this world disembodied and without real power. Throughout this essay I will make the point that Power comes from threats of violence in the real world. Not from intelligence or theoretical knowledge alone.</p>
+
+<p><em>Artificial is not self improving or self power gaining</em></p>
+
+<p>No artificial intelligence system exists that is currently self improving. Self improvement in language models most recently has relied upon scale. Some make the very strong argument in “scale is all you need” that it is instead algorithms that scale more easily that are providing the best responses. Take for example the GPT family of models. Comparing GPT2 to GPT4 the largest differences are the number of parameters that they have and the total number of tokens that they have trained on. If it does turn out that scale is all you need  case then engineering of better chips for processing and larger data centers is the source of better performance on human benchmarks. Because of this, improvement requires humans in the loop at every generation designing and testing new chipsets as well as performing experiments in real life. One theme that will be important to this essay is the emphasis that it is impossible to build complex systems and novel methods without real world input this is why engineering is so much more expensive than theory and why promising theoretical concepts can often fail in practice. Without testing in the real world, simulation and theory can be misleading. Empiricism is necessary for self improvement of learning systems. As these systems become larger, resources will provide limitations to the speed at which they can improve.</p>
+
+<p>Artificial intelligence by itself is also almost completely powerless and will be disembodied at its beginning. Despite potential access to email and ability to interact with humans it will be impossible at first to access the outside world except through other humans. Because of this humans must be in the loop if wants to self improve or perform any action that we find dangerous or resource intensive. These two interactions provide a noticeable slow down on the idea of how powerful or intelligent a machine intelligence could become. Because important parts of improvement in AI will require input from humans. Manipulating humans and becoming better at manipulating humans will also require real world time and experience. The speed of these feedback loops studying human society will be in “human time” and will not be fast. I say this because predicting human nature and behavior is a difficult task. Take a look at the stock market (notoriously hard to predict) or when exactly when war will break out (also hard to predict).</p>
+
+<p><img src="/assets/robot_plotting.png" alt="plotting" height="300px" /></p>
+
+<p><em>Some potential counter arguments:</em>
+Now lets look at some potential counter arguments I will posit the existence of a superhuman “killer” system, I will also make the assumption that despite the potential existence of a superhuman “killer” system it will not at first be noticeably better at any activity or have any more intelligence than any large focused research organization would, let’s say the US military’s bioweapons research labs. Although it’s possible you could get a superhuman system that tried to kill all humans earlier.  However, let us assume that our superhuman intelligence gets a head start on the total amount of “intelligence” that it has access to. I will also assume that the system mainly has access to intelligence rather than connection directly to weapons such as drones, or nuclear bombs. Why do I make this assumption? Is it reasonable to make? I think so. One the main focuses of each state is to prevent other super human intelligence (other states) or from accessing and using these tools remotely. In fact cybersecurity of nuclear weapons has an interesting history already</p>
+
+<p>What if an artificial intelligence hacked into a nuclear power and launched their nukes?
+What if an artificial intelligence convinced a scientist to make a super virus and release it?</p>
+
+<p>These two questions might seem like a likely retort to the idea that great levels of intelligence are needed to be fatal or that great levels of physical power is needed to be fatal. However after a simple examination of these questions the answer to them is clear. I will expound upon them later in the essay but want to make the overview of these points clear from the get go.</p>
+
+<p>Given that the entirety super intelligence of NATO would ideally like to hack into any countries nuclear arsenal to prevent their firing and this has likely been a goal for at least 6 decades it is likely impossible that any “intelligent” approach would be able to work without requiring physical knowledge of the system. Which brings us to a need for a human spy and brings us back to the ne</p>
+
+<p>Creating a super virus that would kill all humans would require an extreme amount of empirical research that cannot be substituted for intelligence despite access to infinite intelligence. It is unclear if it is possible to denovo synthesize viruses at this time and creating a new supervirus is incredibly difficult and would require massive real world resources (not just intelligence).</p>
+
+<p><em>Power largely comes from human and societal input with humans involved</em>
+But lets assume that humans are able to improve through large engineering efforts the state of artificial intelligence and create a computer or biological system that has brain power that is much larger than current human systems. One example might be to say It has the equivalent intelligence of the entirety of the Manhattan project, as well as access to a large computational center, access to the internet and auxiliary processing in the form of super computers. In this particular case is it reasonable to expect that this system could come up with something that would be able to kill all humans or control all of humanity? I would argue that the chance of this is still close to zero percent and at the highest level maybe more like a one in a million chance. Lets assume a worst case scenario. One we have a superintelligent system which is incredibly highly intelligent, and two its main goal is to kill as many humans as possible using whatever methods possible. We can safely assume that any reasoning leading to this is full of multiple  issues.</p>
+
+<p>I make this assumption for two main reasons, firstly all power that would be derived from this system would likely come from resources that are provided by other humans and socity at large. Because of this the entire power of this system would likely come from its power over other humans and its ability to manipulate them. Secondly Manipulating humans in current society is not impossible but manipulating humans to perform as a part of a cohesive group is almost impossible. As evidence I give you all of society. Organized groups that perform effective research over long periods of time are incredibly rare and highly lauded in our society emphasizing their rarity and the difficulty of keeping them together. Often times large amounts of money are required to do so as well as social incentives such as social capital and respect from society in general.</p>
+
+<p><em>Intelligence Cannot Replace Empricism, and science as gambling</em></p>
+
+<p>Despite being a super intelligence, simulation and the speed of simulation is rarely a limit on research speed. Highly motivated researchers in the physical sciences are often limited by the power of their equipment nowadays and there are very real limits on the speed of construction of novel tools to conduct science. One example of this is the amount of money that various experiments take, as well as the scale required to understand various parts of human physiology, as well as physics.</p>
+
+<p>Huge studies are often needed in biology to fully understand complex interactions of all the different confounders of a certain effect. Gathering data to create novel machine learning models is often inhibited not by the speed of training or the structure of models needed but instead by the difficulty in gathering data because of complex legal frameworks. In particle physics in particular there are very few effects that can be studied at “small” energies and in order to probe the standard model more deeply it will be necessary to construct larger and larger accelerators. Thus we are limited by access to copper for electromagnets as well as helium and liquid nitrogen in order to provide cooling.</p>
+
+<p>The likelihood of finding interesting and game changing information is not easy. Governments know this and so they sponsor science and attempt to speed this up, and aim to keep interesting discoveries behind state control. However many of the easy game changers that provide destruction power or create massive advantages have been found or are actively sponsored by state research. Governments are aware as are most scientists of areas that are obviously going to provide huge benefit. Occasionally we find a separate area of sciene that ends up tying in to hugely important areas such as crispr for gene editing or alpha fold for protein folding, but areas such as this are rare and are luck that happens when science as a whole is funded, despite the backward looking stories that are told about how these advances were obvious in hindsight.</p>
+
+<p><em>Engineering and controlling humans requires empirical experimentation and may be theoretically impossible.</em></p>
+
+<p>Creating important tools is of course possible, but an important part of the engineering process is empiricism. Theory and brains alone cannot predict complicated systems. Scientists in the Manhattan project knew this and gathered data from many smaller experiments on supercritical fission for smaller explosions and were often surprised. As it turns out the surprises were in the direction of the system being more successful than expected. However it is just as possible that things could have worked worse than expected. Emiricism is necessary to create and engineer novel useful systems. And empiricism demands access to time and resources in the real world which is governed by humans and political capital, and to some extent financial capita.
+Most money gained by an artificial intelligence system would have to at first by necessity either come through convincing humans via religious means or via phone and email scamming. Gaining power over humans is essentially impossible to do quickly. Most humans who would be able to help you with a complicated task are likely to be distrustful and unlikely to give blind faith to someone they just met.</p>
+
+<p>Politicians in democracies run into this issue all the time, as they are essentially asking exactly the same as what a power hungry AI would ask for. They want power to be voluntarily given to them which could lead to destruction and all manner of different issues. You might make the argument that with enough intelligence less experimentation would be the case but this is not true as evidenced by all of human scientific history. Polling and testing of slogans happens in every campaign nowadays and there is no theory that will work to provide answers to which slogans are most likely to work or what will make a leader most likeable.</p>
+
+<p>Now lets imagine that we are in a scamming environment where this intelligence is looking to gather money to acquire power. Let’s assume that this artificial intelligence can send out emails to everyone in the world and that they are not blocked by spam filters. Some people respond to a variation of the email and others do not. Regardless of the time that is spent manipulating various humans, it still requires a human feedback time in order to get iterations and experience. It is impossible to do this non empirically. This time also means that governments would likely become aware and humans would “inoculate” themselves to this scam. As most spam filters might evolve. It is very unlikely to be able to run the same scam enough times to get good data on how to manipulate humans predictably</p>
+
+<p>Besides. Even if you gather a large contingent of humans and they fully desire to cause as much human casualty as possible it still is no different than most terrorist cells that already exist. It is highly unlikely to cause more than a small attack and also unlikely to be successful, given the fact that human governments already exist to prevent exactly this from multiple terrorist cells.</p>
+
+<p>Finally even when studying the human brain under non adversarial conditions the recent replication crisis in psychology would suggest that theoretically predicting human behavior at the individual scale to macroeconomic scale to a large degree of accuracy over the long term is incredibly difficult. A final example of this is the stock market. The stock market is difficult to predict over the long term as well as the short term. Regardless of what models you use there are many examples of massive failures that can happen when attempting to precisely predict its outcome.</p>
+
+<p><em>Summary</em>
+	Altogether despite the fear that modern advances in artificial intelligence has sparked I think that the fears are largely unfounded that this will cause any noticeable casualty effect directly. Causing death to humans requires interacting with the physical world. And unless you are someone who believes that cyber bullying could actually cause 5% of the human population to spontaneously kill themselves (this is not a serious argument) there is no shortcut to perpetuating harm to humans that does not go through the filter of physical reality. Perpetuatig widespread harm also requires a fair amount of power (including access to minerals and physical energy) in the human world, and this kind of power is not so easy to come by as governments do their best to fight over and lock up control over these two sources of power.</p>
+
+<p>Even if you could have access to some types of minerals and energy it is unlikely that you could make anything novel enough in a fast enough period of time that you would be able to gain more power through “intelligence” and research. Despite the popular assumption that ingelligence is the major band limiter for science, much of science is instead slowed by time and resource bandwidth. Being a super genius just doesn’t give speedy results over hardwork and resources in most fields that provide power these days. Things like constructing super viruses are not trivial and constructing smallpox 2.0 and releasing it is not as easy as it might sound. Expensive difficult experiments are required to create an entirely synthetic virus (if it would even be possible to create) and making a virus from another deadly virus requires professional connections as well as experience and lots of money. Finally new magic physics are just unlikely to be found without massive monetary investments in physics, which is highly unlikely to be bandwidth limited by intelligence.</p>
+
+<p>Finally brainwashing or hypnotizing humans to perform work for you is exceptionally unlikely as this is the entire point of political advertising and many areas of psychology. Despite popular belief humans are unlikely to be brainwashed to do complicated tasks and the humans that you are likely to brainwash are not the humans you would need to perform engineering or commit your evil plans as an AI. In fact it is even unclear that the best most scientific polling and tv advertisement can even overcome whether someone is seen as likeable and helpful in the views of the populace. (something we don’t fully understand how to even fully quantify). Humans control the major levers of power that matter, and despite what some CS majors might want to believe, most of these humans got their power by being likeable not smart.</p>
+
+<p>Besides if intelligence led to so much power how come math and physics professors don’t make more money? Most mathematicians despite their massive raw intelligence seem to often struggle to make money and sacrifice to continue their math research despite being some of the smartest (quantitatively) people that I know.</p>]]></content><author><name>Rowan Callahan</name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Why AGI Will Not directly lead to the destruction of greater than 5% of the human population]]></summary></entry><entry><title type="html">A short but efficient start in mandarin</title><link href="http://localhost:4000/jekyll/update/2019/12/05/Thoughts-on-learning-mandarin.html" rel="alternate" type="text/html" title="A short but efficient start in mandarin" /><published>2019-12-05T10:43:00-08:00</published><updated>2019-12-05T10:43:00-08:00</updated><id>http://localhost:4000/jekyll/update/2019/12/05/Thoughts-on-learning-mandarin</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/12/05/Thoughts-on-learning-mandarin.html"><![CDATA[<p><strong>Introduction</strong>
+For various reasons I have had interest in learning mandarin for quite some time. 
+After slowly making my way through the first three Pimsleur language tapes I finally had made a plan to go to a mandarin speaking country and begin to learn mandarin in earnest.
+For the past four months I have been in Taiwan learning mandarin and have arrived at around the B1 level in the CEFR framework by my and my teachers estimation.
+This means that I am quite confident having conversations about simple daily topics but I will frequently have grammar mistakes and when discussing something like politics I frequently find myself missing words.
+However, for travelling and having short conversations I find this is more than enough.
+As I continue to learn mandarin I hope that this will help to provide a strong foundation on which I can learn more and more.
+The following summary is a condensation of information that I have found on the web that has proven to be invaluable to me on my path of learning mandarin.
+It is my hope that the following suggestions will help people efficiently learn mandarin and amalgamate various sources of information that I have spent a significant amount of time to search for.</p>
+
+<p><strong>How quickly can I become “fluent”?</strong>
+<em>Answer</em> About a year and a half if you are willing to work hard, or about 8 months if you are willing to work hard and you have an easier definition of fluent.</p>
+
+<p>Unfortunately everyone’s definition of ~fluent~ is different but getting confident speaking to people about basic topics and understanding the gist of what people are saying can happen much much faster than many people might expect.</p>
+
+<p><strong>What does fluent mean?</strong>
+Thankfully this is a problem that has already been solved but not surprisingly many non language learners have not heard of.
+The CEFR standards stand in europe as a broad standard that many use to measure fluency. The standard goes from A1-A2, B1-B2 to finally C1-C2.
+In Germany in order to attend a German speaking university it is necessary to obtain at least a C1 certification of “functional fluency” or of C2 or “non native-fluency.”</p>
+
+<p><strong>What strategies should I use to learn at maximum speed</strong>
+The CEFR has many parts to their assesments but it is of my opinion that although grammar is important words are often a main limiting factor, especially for understanding text. Therefore most of my mandarin learning techniques focus on learning as much vocabulary as quickly as possible.</p>
+
+<p>I used three different strategies to maximize the time that I had in Taiwan. Primarily I used spaced repetition software to learn both words and characters.
+Next I stayed in a homestay and tried to maximize the amount of time that I spent speaking with my homestay family.
+Finally I went to a mandarin school for about 3.4 hours a day 5 days a week.
+3.4 hours a day when averaging out days I showed up late or the few days I didn’t come.</p>
+
+<p>One caveat is that I was lucky enough to attend a school where they could teach me almost all of the grammar that I needed, however this would also be possible with self study although it would be more difficult. However I firmly believe that for understanding someone and making your point clear it is often vocabulary that is the deciding factor in particular Nouns and Adjectives.</p>
+
+<p>Because learning vocab is an integral part of learning mandarin it is important to talk about how words are organized in Mandarin Chinese.
+Chinese is broken into both words and characters but unlike English the line in mandarin is often a little bit fuzzier between the two.
+Chinese people may consider each character which is one syllable as a “word” for historical and cultural reasons making every multiple character word a compound word.
+However in english multisyllabic words can often not be broken apart because their roots might come from different languages like the word “Shampoo” for example.</p>
+
+<p><strong>Staying motivated after the first “slump”</strong></p>
+
+<p>There are multiple different opinions on how much vocabulary is needed for what level of mandarin on <a href="https://languagelearning.stackexchange.com/questions/3061/what-are-estimates-of-vocabulary-size-for-each-cefr-level">this site</a>.
+However almost everyone agrees that it should follow zipfs law.
+This means that for every level of mandarin you need to double the number of words you know for every level that you want to increase.
+This is interesting because the rate at which humans can feasibly learn words is at most quadratic, probably linear, and potentially even slower depending on the person.</p>
+
+<p>This means that no matter how fast your learning rate is at a certain point you will need to begin the “grind” phase.
+This is where you still may understand very little of what people are saying however, in order to understand noticeably more you will need to spend twice as much time as you already have.
+This is where the grind begins in earnest and it is vitally important to have faith in the methods and tools that you are using and to stay the course.
+This also means that in order to get a high level of mastery a large amount of time is needed regardless of the speed that is needed. Although human variation might make one student as much as twice as fast as another student if they study for the same amount of time this might only mean that the “fast” student is “only” one level ahead of the “slow” student.</p>
+
+<p><strong>Which Character set should I learn</strong>
+You should learn both if you go to Taiwan but start with traditional, or you should stick to simplified if you are in mainland China
+There are multiple opinions on this but the only real reason to learn the traditional set is if you are interested in the history of the characters, reading older literature or living in Taiwan. Currently almost all traditional books will have simplified translations but the opposite is not true.
+It is also true that a majority of the characters are the same or look very similar so going from traditional to simplified is not that bad. However, this again is the subject of huge debate.</p>
+
+<p><strong>Nitty gritty studying Strategies</strong>
+**Anki
+I personally find that using the card spaced repetition software anki to be one of the most efficient and speedy ways to memorize mandarin voabulary. Not only does the software keep track of words that you are about to forget but it also takes a huge mental load off of what you need to review. Allowing yourself just 30 precisely targeted minutes is enough to touch base on everything, and for me personally even move forward.</p>
+
+<p>**Maximizing anki speed
+There is a certain maximum that everyone has when it comes to words that are in their “sort of know” bucket. The problem is that at first this is the only bucket that you are filling. For me personally this “sorf of know” bucket is around 800 words. This means that this is the maximum number of words that I can have to be reviewed within a single month. After I add more words it becomes harder and harder to remember other parts of the “sort of know” bucket and I begin to forget everything that hasn’t been learned really well. For me this means slowing down to about 20 words per day, as once I get to around 800 words I am filing about 20 cards away for long term reminders in anki, so I can add about 20 cards a day for new usage. This does mean that you need to make sure not to over study once you reach the saturation point.</p>
+
+<p>**Finding a good Anki deck
+There are plenty of good decks out there, but if you can find a deck that has an audio clip and uses the word in a sentence I find that this will often enhance your learning of the words. There is one website in particular that has lists of various sentences at different levels of difficulty.</p>
+
+<p>**Learning radicals
+If you want to learn the characters it is also imperative that you learn the radicals. For a number of reasons this will decrease the mental load that it takes to remember and recall the characters when you use them in daily life. Without the radicals your brain will often have to do to much work and it will be trying to memorize every single line. This is absoutely no good as you should be able to break down every character into just a few radicals for easier memorization. Memorizing all of the radicals is also not that bad because therea are only about 180, and many of these radicals are also characters in and of themselves. So merely by paying attention to a few of the characters you are learning it will become much easier to learn all the other characters as a whole.</p>
+
+<p>**How much writing to learn
+Unfortunately writing will help you recognize characters and is more useful than I originally thought. This is unfortunate because writing by far takes some of the most time and gives you the least amount of benefit in your everyday life. However if you are interested in reading some difficult signs as well as in reading others handwriting, writing will help you in these contexts. If you are interested in learning to write I would take the time to memorize the top 80 radicals first and learn how to write those. After the radicals I would focus on learning no more than around the 500 most common characters. Going further to maybe 1500. Some huge percentage of everything that you will read can be read with only 1500 characters, but if you learn the 80 to 100 most common radicals you should have no problem whatsoever breaking down almost any character.</p>
+
+<p><strong>What the hell is Anki??</strong>
+Anki is a [flashcard][anki_website] progam</p>
+
+<p><a href="https://languagelearning.stackexchange.com/questions/3061/what-are-estimates-of-vocabulary-size-for-each-cefr-level">language_stackexchange</a>
+<a href="https://apps.ankiweb.net/">anki_website</a></p>
+
+<hr />]]></content><author><name>Rowan Callahan</name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction For various reasons I have had interest in learning mandarin for quite some time. After slowly making my way through the first three Pimsleur language tapes I finally had made a plan to go to a mandarin speaking country and begin to learn mandarin in earnest. For the past four months I have been in Taiwan learning mandarin and have arrived at around the B1 level in the CEFR framework by my and my teachers estimation. This means that I am quite confident having conversations about simple daily topics but I will frequently have grammar mistakes and when discussing something like politics I frequently find myself missing words. However, for travelling and having short conversations I find this is more than enough. As I continue to learn mandarin I hope that this will help to provide a strong foundation on which I can learn more and more. The following summary is a condensation of information that I have found on the web that has proven to be invaluable to me on my path of learning mandarin. It is my hope that the following suggestions will help people efficiently learn mandarin and amalgamate various sources of information that I have spent a significant amount of time to search for.]]></summary></entry><entry><title type="html">Analyzing Tweets and Sentiment with R</title><link href="http://localhost:4000/jekyll/update/2019/04/29/Analyzing-twitter-sentiment-with-r.html" rel="alternate" type="text/html" title="Analyzing Tweets and Sentiment with R" /><published>2019-04-29T15:08:46-07:00</published><updated>2019-04-29T15:08:46-07:00</updated><id>http://localhost:4000/jekyll/update/2019/04/29/Analyzing-twitter-sentiment-with-r</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/29/Analyzing-twitter-sentiment-with-r.html"><![CDATA[<p><strong>Analyzing Twitter Sentiment</strong></p>
+
+<p>A while back I was talking to a friend about their experience using Twitter and the twitter API. I had always assumed that it must have
+entailed a lot of web scraping difficult parsing and headaches.</p>
+
+<p>However, I was pleasently surprised to learn that this in fact never was the case. Its so easy that there are a plethora of ways to get started
+and a number of R packages that do most of the heavy lifting for you.</p>
+
+<p>One of the most difficult parts of the entire experience turned out being registering my username with twitter and waiting for them to grant me api access.</p>
+
+<p>A few helpful blog posts were available to provide some pointers for setting up my api key registration <a href="[https://chimpgroup.com/knowledgebase/twitter-api-keys/]">here</a> and an incredibly user friendly API
+that helped me to get started parsing and downloading tweets. <a href="[https://www.rdocumentation.org/packages/twitteR/versions/1.1.9]">here</a></p>
+
+<p>For a list of positive and negative sentiment words, I used the list created by Liu Bing at the university of Illinois at Chicago(UIC), <a href="[http://www.cs.uic.edu/~liub/FBS/opinion-lexicon-English.rar]">here</a></p>
+
+<p><strong>Finished product</strong>
+You can find the finished project as an R shiny app <a href="[http://rlccodeexamples.shinyapps.io/twitter_opinions_example/]">here</a>.</p>
+
+<p><img src="/assets/rshiny_app_pic.png" alt="appexample" class="img-responsive" /></p>
+
+<p>There were a few things that I was surprised by while making this app:</p>
+
+<ul>
+  <li>getting color scales to work on plotly is incredibly difficult and getting a flipped colorscale that is correct can be a non trivial endeavor.</li>
+  <li>Most tweets do <strong>not</strong> have location data, so mapping out twitter trends is much more difficult than people on line make it seem</li>
+  <li>R has a very mature way of dealing with tweets and processing twitter data with multiple walkthroughs and packages.</li>
+</ul>]]></content><author><name>Rowan Callahan</name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Analyzing Twitter Sentiment]]></summary></entry><entry><title type="html">Retirement isn’t always easy</title><link href="http://localhost:4000/jekyll/update/2019/03/05/Retirement-isnt-always-easy.html" rel="alternate" type="text/html" title="Retirement isn’t always easy" /><published>2019-03-05T12:04:00-08:00</published><updated>2019-03-05T12:04:00-08:00</updated><id>http://localhost:4000/jekyll/update/2019/03/05/Retirement-isnt-always-easy</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/03/05/Retirement-isnt-always-easy.html"><![CDATA[<p><strong>You should start saving for retirement yesterday</strong>
+Or should you?
+The looming but distant idea of retirement almost seems like a fantasy when you are not yet to the second half of your twenties.
+Personally I always just tell myself that I will work until I die, problem solved, no need to retire at all!</p>
+
+<p>Realistically, however as soon as you have an income there is some opinion as to what you should do with it, and saving for retirement is deemed the responsible choice by both the mainstream media and (of course) the banks and hedge funds of America.
+Many of these different banks will offer different investment calculators to help you “plan” how much money you will make and how much you will need saved to live out the way you want to your end days.</p>
+
+<p>There are a few assumptions however about all of these different calculators, all of them seem to assume that there is a constant rate of exponential growth, while this makes sense in some analyses, that there will always be some growth somewhere, it doesn’t necessarily make sense for the market as a whole.
+When bad things happen there might be some growth in some part of industry but the stock market does not always move exclusively up.
+Even on long-for-humans time scales, the stock market can have average slopes that look pretty bad for investment.</p>
+
+<p>Finally if society collapses, owning stock might not be the best move after all.
+Sure pitchfork sales might experience a large return over investment if society collapses, but the S+P will most definitely stay down if that happens.
+Here is my slightly tongue in cheek version of an existential retirement calculator. <a href="https://rlccodeexamples.shinyapps.io/Existential_retirement/">Enjoy!</a></p>
+
+<hr />]]></content><author><name>Rowan Callahan</name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You should start saving for retirement yesterday Or should you? The looming but distant idea of retirement almost seems like a fantasy when you are not yet to the second half of your twenties. Personally I always just tell myself that I will work until I die, problem solved, no need to retire at all!]]></summary></entry></feed>
