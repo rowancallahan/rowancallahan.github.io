@@ -3,12 +3,12 @@
 
 @import "minima";
 
-// Gruvbox Light Theme Colors
+// Gruvbox Light Theme Colors - Updated for brown text
 $gruvbox-bg0: #fbf1c7;
 $gruvbox-bg1: #ebdbb2;
 $gruvbox-bg2: #d5c4a1;
-$gruvbox-fg0: #282828;
-$gruvbox-fg1: #3c3836;
+$gruvbox-fg0: #654321; // Brown text color
+$gruvbox-fg1: #8B4513; // Darker brown for secondary text
 $gruvbox-blue: #458588;
 $gruvbox-green: #98971a;
 $gruvbox-orange: #d65d0e;
@@ -28,11 +28,12 @@ body {
   line-height: 1.6;
 }
 
-// Header styling
+// Header styling - simplified, no two-tone
 .site-header {
-  border-top: 5px solid $gruvbox-blue;
+  border-top: none;
   border-bottom: 1px solid $gruvbox-bg2;
-  background-color: $gruvbox-bg1;
+  background-color: $gruvbox-bg0;
+  min-height: 50px;
 }
 
 .site-title,
@@ -135,18 +136,20 @@ blockquote {
   max-width: 900px;
 }
 
-// Profile image styling
+// Profile image styling - floating for text wrap
 .img-responsive {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 200px;
-  margin: 20px 0;
+  float: left;
+  margin: 0 20px 20px 0;
+  shape-outside: margin-box;
 }
 
 // About page enhancements
 .page-content {
-  h3 {
-    color: $gruvbox-blue;
+  h3:not(.archive-post h3) {
+    color: $gruvbox-fg0; // Changed from blue to brown
     border-bottom: 2px solid $gruvbox-bg2;
     padding-bottom: 5px;
     margin-top: 30px;
@@ -191,14 +194,177 @@ table {
   }
 }
 
+// Simplified home page layout
+.home-simple {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.posts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0 20px 0;
+  border-bottom: 2px solid $gruvbox-bg2;
+  padding-bottom: 10px;
+  
+  h2 {
+    margin: 0;
+    color: $gruvbox-fg0;
+  }
+}
+
+.archive-link {
+  color: $gruvbox-blue;
+  text-decoration: none;
+  font-weight: 500;
+  
+  &:hover {
+    color: $gruvbox-green;
+    text-decoration: underline;
+  }
+}
+
+.all-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.post-article {
+  background-color: $gruvbox-bg0;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  scroll-margin-top: 80px;
+  
+  .post-header {
+    margin-bottom: 20px;
+    border-bottom: 1px solid $gruvbox-bg2;
+    padding-bottom: 15px;
+  }
+  
+  .post-title {
+    margin: 0 0 10px 0;
+    color: $gruvbox-fg0; // Changed from blue to brown
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .post-meta {
+    margin: 0;
+    font-size: 14px;
+    color: $gruvbox-fg1;
+    font-style: italic;
+  }
+  
+  .post-content {
+    line-height: 1.7;
+    
+    h1, h2, h3, h4, h5, h6 {
+      color: $gruvbox-fg0;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+    
+    p {
+      margin-bottom: 16px;
+    }
+    
+    pre, code {
+      background-color: $gruvbox-bg1;
+      border: 1px solid $gruvbox-bg2;
+    }
+    
+    blockquote {
+      border-left: 4px solid $gruvbox-orange;
+      background-color: $gruvbox-bg1;
+      padding: 15px;
+      margin: 20px 0;
+    }
+  }
+}
+
+// Smooth scrolling
+html {
+  scroll-behavior: smooth;
+}
+
+// Archive page styling
+.archive-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.archive-post {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $gruvbox-bg2;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  h3 {
+    margin: 8px 0 10px 0 !important;
+    font-size: 22px !important;
+    color: $gruvbox-fg0 !important; // Override any blue styling
+    border-bottom: none !important; // Remove any blue borders
+    
+    a {
+      color: $gruvbox-fg0 !important;
+      text-decoration: none;
+      
+      &:hover {
+        color: $gruvbox-blue !important;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.archive-date {
+  display: block;
+  font-size: 14px;
+  color: $gruvbox-fg1;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.archive-excerpt {
+  color: $gruvbox-fg1;
+  line-height: 1.5;
+  margin: 0;
+}
+
 // Mobile responsiveness improvements
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
+  .posts-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
   .img-responsive {
     max-width: 150px;
+    float: none;
+    display: block;
+    margin: 0 auto 20px auto;
   }
   
   .wrapper {
     padding-right: 20px;
     padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .post-article {
+    padding: 20px;
+  }
+  
+  .post-title {
+    font-size: 24px;
   }
 }
