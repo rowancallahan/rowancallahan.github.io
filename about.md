@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+show_title: false
 ---
 ![profile](/assets/headshot_rowancallahan.jpg){:class="img-responsive"}
 
@@ -9,7 +10,11 @@ I am a graduate student in CEDAR at OHSU.
 
 I am interested in using and developing computational tools that allow scientists to better understand their genomic data. Currently I do a lot of work on analyzing cell free RNA and using this for cancer prediction tasks.
 
-You can find some of my work on [Github](https://github.com/rowancallahan)
+**More places to find me:**
+[GitHub](https://github.com/rowancallahan){:target="_blank"} • 
+[Google Scholar](https://scholar.google.com/citations?user=uC3DpcgAAAAJ&hl=en){:target="_blank"} • 
+[ORCID](https://orcid.org/0000-0002-2120-7487){:target="_blank"} • 
+[Email](mailto:{{site.email}})
 
 ### List of bioinformatics things I find really cool
 Nanopore sequencing
@@ -36,10 +41,5 @@ Are their qualitative differences in the tumors we detect based off of the detec
 
 Are tumors found with imaging likely different from those found with sequencing? (is one modality better for finding tumors that matter?)
 
-
-
-### Contact Information  
-
-My email is {{site.email}}
 
 
