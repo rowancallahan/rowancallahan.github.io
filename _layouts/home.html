@@ -5,18 +5,18 @@ layout: default
 <div class="home-simple">
   {{ content }}
   
-  <div class="posts-header">
-    <h2>Recent Posts</h2>
-    <a href="/archive/" class="archive-link">View All Posts →</a>
+  <!-- Sticky archive link -->
+  <div style="position: sticky; top: 20px; float: right; z-index: 100; margin-bottom: 20px;">
+    <a href="/archive/" class="archive-link" style="background: transparent; padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">View All Posts →</a>
   </div>
   
   {%- if site.posts.size > 0 -%}
     <div class="all-posts">
       {%- for post in site.posts limit:5 -%}
       <article class="post-article" id="post-{{ forloop.index }}">
-        <header class="post-header">
-          <h2 class="post-title">{{ post.title | escape }}</h2>
-          <p class="post-meta">
+        <header class="post-header" style="position: sticky; top: 0; background: rgba(251, 241, 199, 0.95); z-index: 10; padding: 10px 0; margin-bottom: 10px; border-bottom: 1px solid #ddd;">
+          <h2 class="post-title" style="margin: 0;">{{ post.title | escape }}</h2>
+          <p class="post-meta" style="margin: 5px 0 0 0;">
             {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
             {{ post.date | date: date_format }}
           </p>
