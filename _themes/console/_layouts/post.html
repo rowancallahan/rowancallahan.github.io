@@ -1,0 +1,11 @@
+---
+layout: default
+---
+{%- comment -%}
+  Override of the theme's post layout, which is bare {{ content }}:
+  add the post title and date above the body.
+{%- endcomment -%}
+<h1>{{ page.title | escape }}</h1>
+<p><em>{{ page.date | date: "%Y-%m-%d" }}</em></p>
+
+{{ content }}

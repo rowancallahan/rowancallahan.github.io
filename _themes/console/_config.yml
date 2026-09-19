@@ -1,0 +1,26 @@
+title: Rowan Callahan
+description: >-
+  Please reach out if anything is interesting to you or if you would like to work together on any projects!
+author: Rowan Callahan
+email: rowan.callahan@hey.com
+url: "https://rowancallahan.github.io"
+baseurl: ""
+github_username: rowancallahan
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-console
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag   # required by the theme's head.html ({% seo %} tag)
+
+# jekyll-theme-console options
+style: light # dark (default), light, hacker, nord
+listen_for_clients_preferred_style: false
+disable_google_fonts: false
+
+header_pages:
+  - index.md
+  - posts.md
+
+footer: 'Rowan Callahan · <a href="mailto:rowan.callahan@hey.com">email</a> · <a href="https://github.com/rowancallahan">GitHub</a>'

@@ -1,0 +1,24 @@
+<!-- Color-scheme picker. Sits at the right end of the nav line, inside the
+     text column, in the page font. Sets data-theme on <html>; the schemes
+     live in assets/main.scss. "plain" is the browser default. -->
+<select id="theme-select" aria-label="color scheme" style="float: right; font: inherit;">
+  <option value="plain">plain</option>
+  <option value="dark">dark</option>
+  <option value="solarized-light">solarized light</option>
+  <option value="solarized-dark">solarized dark</option>
+</select>
+<script>
+(function () {
+  var sel = document.getElementById("theme-select");
+  function apply(name) {
+    if (name === "plain") { document.documentElement.removeAttribute("data-theme"); }
+    else { document.documentElement.setAttribute("data-theme", name); }
+    sel.value = name;
+    try { localStorage.setItem("theme-pick", name); } catch (e) {}
+  }
+  sel.addEventListener("change", function () { apply(sel.value); });
+  var saved = null;
+  try { saved = localStorage.getItem("theme-pick"); } catch (e) {}
+  apply(saved || "plain");
+})();
+</script>

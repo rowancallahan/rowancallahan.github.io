@@ -1,0 +1,43 @@
+---
+---
+// After instinct.com: an otherwise browser-default document whose only style
+// is the typeface and the column width. Times New Roman was chosen with the
+// font picker (the file _includes/font-picker.html is kept but no longer
+// included; add it back to _includes/header.html to compare fonts again).
+//
+// max-width instead of nginx's fixed width so the column is 48em on a big
+// screen (wide enough that the longest archive titles stay on one line) and
+// shrinks to the viewport on a phone.
+body { max-width: 48em; margin: 0 auto; padding: 0 1em; font-family: "Times New Roman", Times, serif; }
+
+// Optional color schemes, chosen with the tiny picker in the upper right
+// (_includes/theme-picker.html). With no choice made, nothing below applies
+// and the page keeps the browser's default colors.
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  background: #121212;
+  color: #e0e0e0;
+  a { color: #8ab4f8; }
+  a:visited { color: #c58af9; }
+  pre, code { background: #1e1e1e; }
+}
+
+html[data-theme="solarized-light"] {
+  background: #fdf6e3;
+  color: #657b83;
+  h1, h2, h3, h4, h5, h6, strong { color: #586e75; }
+  a { color: #268bd2; }
+  a:visited { color: #6c71c4; }
+  pre, code { background: #eee8d5; }
+}
+
+html[data-theme="solarized-dark"] {
+  color-scheme: dark;
+  background: #002b36;
+  color: #839496;
+  h1, h2, h3, h4, h5, h6, strong { color: #93a1a1; }
+  a { color: #268bd2; }
+  a:visited { color: #6c71c4; }
+  pre, code { background: #073642; }
+}

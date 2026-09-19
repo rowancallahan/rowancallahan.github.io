@@ -1,0 +1,41 @@
+<!-- Preview-only font picker. Pick a font, it is applied to the whole page and
+     remembered in this browser. Delete this include when a font is chosen. -->
+<p>font: <select id="font-select"></select> <small id="font-note"></small></p>
+<script>
+(function () {
+  // [name, source]  gf = loaded from Google Fonts on demand, sys = installed font
+  var fonts = [
+    ["Inter", "gf"], ["Archivo", "gf"], ["Hanken Grotesk", "gf"], ["Instrument Sans", "gf"],
+    ["Schibsted Grotesk", "gf"], ["Work Sans", "gf"], ["Public Sans", "gf"], ["Libre Franklin", "gf"],
+    ["Figtree", "gf"], ["DM Sans", "gf"], ["IBM Plex Sans", "gf"], ["Manrope", "gf"],
+    ["Geist", "gf"], ["Roboto", "gf"], ["Lato", "gf"], ["Source Sans 3", "gf"],
+    ["Helvetica Neue", "sys"], ["Helvetica", "sys"], ["Arial", "sys"], ["system-ui", "sys"],
+    ["Tahoma", "sys"], ["Verdana", "sys"], ["Georgia", "sys"], ["Times New Roman", "sys"]
+  ];
+  var sel = document.getElementById("font-select");
+  var note = document.getElementById("font-note");
+  fonts.forEach(function (f) {
+    var o = document.createElement("option");
+    o.value = f[0]; o.textContent = f[0] + (f[1] === "sys" ? " (installed)" : "");
+    sel.appendChild(o);
+  });
+  function apply(name) {
+    var meta = fonts.filter(function (f) { return f[0] === name; })[0];
+    if (!meta) return;
+    if (meta[1] === "gf" && !document.getElementById("gf-" + name)) {
+      var l = document.createElement("link");
+      l.rel = "stylesheet"; l.id = "gf-" + name;
+      l.href = "https://fonts.googleapis.com/css2?family=" + name.replace(/ /g, "+") + ":wght@400;700&display=swap";
+      document.head.appendChild(l);
+    }
+    document.body.style.fontFamily = '"' + name + '", sans-serif';
+    sel.value = name;
+    note.textContent = meta[1] === "gf" ? "(Google Fonts)" : "";
+    try { localStorage.setItem("font-pick", name); } catch (e) {}
+  }
+  sel.addEventListener("change", function () { apply(sel.value); });
+  var saved = null;
+  try { saved = localStorage.getItem("font-pick"); } catch (e) {}
+  apply(saved || "Inter");
+})();
+</script>

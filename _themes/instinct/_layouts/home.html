@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<h1>{{ page.title | default: "Posts" | escape }}</h1>
+<p><a href="{{ "/archive/" | relative_url }}">All posts</a></p>
+
+{{ content }}
+
+{%- for post in site.posts limit:5 -%}
+<article class="post">
+  <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+  <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+  {{ post.content }}
+  <hr>
+</article>
+{%- endfor -%}
