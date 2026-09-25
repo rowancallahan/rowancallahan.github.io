@@ -9,27 +9,24 @@ redirect_from:
 ---
 
 ### Who I am 
-I am a graduate student in CEDAR at OHSU.
 
-I am interested in using and developing computational tools that allow scientists to better understand their genomic data. Currently I do a lot of work on analyzing cell free RNA and using this for cancer prediction tasks.
+I am a recently defended Ph.D Student in the Ngo lab at the Knight Cancer Institute which is part of Oregon Health and Sciences University.
+I am interested in using and developing computational tools that allow scientists to better understand their genomic data, and data in general.
 
-**More places to find me:**
-[GitHub](https://github.com/rowancallahan) • 
-[Google Scholar](https://scholar.google.com/citations?user=uC3DpcgAAAAJ&hl=en) • 
-[ORCID](https://orcid.org/0000-0002-2120-7487) • 
-[Email](mailto:{{ site.author.email }})
-
-### List of bioinformatics things I find really cool
-- Nanopore sequencing
-- Modelling sequences without using a single reference genome and reference free genomic methods
-- Cell free nucleic acids (who knew there was so much information floating around our bodies!)
-- Language models for proteins and nucleic acids (relevant to above, its amazing that they are able to work so well!)
-- Snakemake and bash scripting 
+Currently looking for my next opportunity!
 
 ### Scientific questions I find interesting
+- Are tumors found with imaging different from those found with sequencing? Is one modality better for finding tumors that have a higher mortality?
+- Is it possible to create simplified models of any cell that are human understandable? i.e. toy circuits that work for all of the different pathways that exist within a cell.
+- If it is possible to create these simplified models, can we find ways to measure how much error they have from the "ground truth"?
 - How long did it take life to evolve/why is the cell seemingly the only unit of life that exists on earth and why is so much of our DNA shared?
-- How much qualitative information can we get from sequencing reads, what are some methods we can use besides simply creating counts tables? What are other vectors you can use for describing a sequencing sample?
-- Will it ever be possible to fully simulate a cell? Are cells a chaotic system that resists simulation ie will we be able to fully predict what changes in things such as protein variants can do to the cell over the long term. Or is this unknowable without simulating the cell at an infeasible (ie atomic) level?
 - What would cellular life on other planets look like? Could we ever detect it if we were on a planet with life?
-- Are their qualitative differences in the tumors we detect based off of the detection modality we use?
-- Are tumors found with imaging likely different from those found with sequencing? (is one modality better for finding tumors that matter?)
+- What important questions can be asked or answered with faster algorithms? Is there any algorithm where a 10-100x speedup would change the way research is done in that field?
+- How many computational algorithms can be defined with an easy to measure cost function? Which ones have feasible methods to find the optimum in an acceptable time frame? (Which algorithms exist in P?)
+
+### Approaches I find interesting right now
+- Probabilistic models and linear models
+- Computational models that can be used to increase human understanding not just predict future states.
+- Lean and proof based coding to improve safety and allow for more trust about code that is generated
+- GPU acceleration of algorithms and multi threading approaches
+
