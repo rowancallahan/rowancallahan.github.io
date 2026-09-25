@@ -10,7 +10,7 @@ redirect_from:
 
 ### Who I am 
 
-I am a recently defended Ph.D Student in the Ngo lab at the Knight Cancer Institute which is part of Oregon Health & Science University.
+I recently defended my PhD done in the Ngo lab at CEDAR which is part of Oregon Health & Science University.
 I am interested in using and developing computational tools that allow scientists to better understand their genomic data, and data in general.
 
 Currently looking for my next opportunity!
